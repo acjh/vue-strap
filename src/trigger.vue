@@ -14,6 +14,10 @@
       },
       _triggerBy: {
         type: Object
+      },
+      isBinded: {
+        type: Boolean,
+        default: false
       }
     },
     attached () {
@@ -33,6 +37,7 @@
     },
     methods: {
       setTriggerBy (vm) {
+        this.isBinded = true
         this._triggerBy = vm
       }
     }
