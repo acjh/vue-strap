@@ -28475,7 +28475,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 256 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	/* WEBPACK VAR INJECTION */(function(jQuery) {'use strict';
+	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -28597,11 +28597,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	      }
 	    },
 	    'trigger:bind': function triggerBind(el, id) {
-	      if (id === this.id && !el.isBinded) {
+	      if (id === this.id) {
 	        el.setTriggerBy(this);
-	        // Add event listener for the el
-	        var events = { contextmenu: 'contextmenu', hover: 'mouseleave mouseenter', focus: 'blur focus' };
-	        jQuery(el.$el).on(events[el.trigger] || 'click', this.toggle);
 	      }
 	    }
 	  },
@@ -28737,7 +28734,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// <script>
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(130)))
 
 /***/ }),
 /* 257 */
@@ -29752,10 +29748,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	     * @param el a Vue instance
 	     */
 	    setTrigger: function setTrigger(el) {
-	      var events = { contextmenu: 'contextmenu', hover: 'mouseleave mouseenter', focus: 'blur focus' };
 	      this.trigger = el.trigger; // trigger event
 	      this._trigger = el.$el;
-	      jQuery(el.$el).on(events[this.trigger] || 'click', this.toggle);
 	    },
 	    toggle: function toggle(e) {
 	      var _this = this;
@@ -32225,7 +32219,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    _triggerBy: {
 	      type: Object
 	    },
-	    isBinded: {
+	    _isBinded: {
 	      type: Boolean,
 	      default: false
 	    }
@@ -32250,8 +32244,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	  methods: {
 	    setTriggerBy: function setTriggerBy(vm) {
-	      this.isBinded = true;
-	      this._triggerBy = vm;
+	      if (!this._isBinded) {
+	        var events = { contextmenu: 'contextmenu', hover: 'mouseleave mouseenter', focus: 'blur focus' };
+	        this._isBinded = true;
+	        this._triggerBy = vm;
+	        jQuery(this.$el).on(events[this.trigger] || 'click', this._triggerBy.toggle);
+	      }
 	    }
 	  }
 	  // </script>
