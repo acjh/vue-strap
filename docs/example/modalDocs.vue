@@ -111,7 +111,7 @@
       <modal title="Small Modal" small :show.sync="...">
         ...
       </modal>
-  </doc-code>
+    </doc-code>
     -->
   <doc-table>
     <div>
@@ -158,7 +158,7 @@
     <code>&lt;div slot="modal-title" class="modal-title"&gt;...&lt;/div&gt;</code> and
     <code>&lt;div slot="modal-footer" class="modal-footer"&gt;...&lt;/div&gt;</code>.
   </p>
-  </div>
+  </doc-section>
 </template>
 
 <script>
