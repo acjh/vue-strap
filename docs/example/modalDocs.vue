@@ -1,5 +1,7 @@
 <template>
   <doc-section id="modal" name="Modal">
+    See <a href="#triggerDocs">Trigger</a>.
+    <!-- Deprecated in v1.1.37-markbind.2
     <div class="bs-example">
       <button class="btn btn-default" v-show-modal="modal1">Show modal</button>
       <modal title="==Modal title==" name="modal1">
@@ -110,6 +112,7 @@
         ...
       </modal>
   </doc-code>
+    -->
   <doc-table>
     <div>
       <p>title</p>
