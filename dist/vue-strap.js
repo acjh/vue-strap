@@ -843,15 +843,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 	// </script>
 	// <template>
-	
 	//   <div class="panel-group">
-	
 	//     <slot></slot>
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script>
 
@@ -1071,7 +1066,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 65 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div class=\"panel-group\">\r\n    <slot></slot>\r\n  </div>";
+	module.exports = "<div class=\"panel-group\">\n    <slot></slot>\n  </div>";
 
 /***/ }),
 /* 66 */
@@ -1116,19 +1111,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	//   <div class="hidden-print hidden-xs hidden-sm">
-	
 	//     <nav class="bs-docs-sidebar" :class="{affix:affixed}" :style="{marginTop:top}">
-	
 	//       <slot></slot>
-	
 	//     </nav>
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -2301,7 +2289,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 99 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div class=\"hidden-print hidden-xs hidden-sm\">\r\n    <nav class=\"bs-docs-sidebar\" :class=\"{affix:affixed}\" :style=\"{marginTop:top}\">\r\n      <slot></slot>\r\n    </nav>\r\n  </div>";
+	module.exports = "<div class=\"hidden-print hidden-xs hidden-sm\">\n    <nav class=\"bs-docs-sidebar\" :class=\"{affix:affixed}\" :style=\"{marginTop:top}\">\n      <slot></slot>\n    </nav>\n  </div>";
 
 /***/ }),
 /* 100 */
@@ -2344,8 +2332,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-13e7ff02&file=Alert.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Alert.vue", function() {
-				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-13e7ff02&file=Alert.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Alert.vue");
+			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-68ceb3fc&file=Alert.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Alert.vue", function() {
+				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-68ceb3fc&file=Alert.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Alert.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -2363,7 +2351,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, ".fade-transition {\r\n  transition: opacity .3s ease;\r\n}\r\n.fade-enter,\r\n.fade-leave {\r\n  height: 0;\r\n  opacity: 0;\r\n}\r\n.alert.top {\r\n  position: fixed;\r\n  top: 30px;\r\n  margin: 0 auto;\r\n  left: 0;\r\n  right: 0;\r\n  z-index: 1050;\r\n}\r\n.alert.top-right {\r\n  position: fixed;\r\n  top: 30px;\r\n  right: 50px;\r\n  z-index: 1050;\r\n}", ""]);
+	exports.push([module.id, ".fade-transition {\n  transition: opacity .3s ease;\n}\n.fade-enter,\n.fade-leave {\n  height: 0;\n  opacity: 0;\n}\n.alert.top {\n  position: fixed;\n  top: 30px;\n  margin: 0 auto;\n  left: 0;\n  right: 0;\n  z-index: 1050;\n}\n.alert.top-right {\n  position: fixed;\n  top: 30px;\n  right: 50px;\n  z-index: 1050;\n}", ""]);
 	
 	// exports
 
@@ -2730,99 +2718,53 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 	  // </script>
 	
-	
 	  // <style>
-	
 	  // .fade-transition {
-	
 	  //   transition: opacity .3s ease;
-	
 	  // }
-	
 	  // .fade-enter,
-	
 	  // .fade-leave {
-	
 	  //   height: 0;
-	
 	  //   opacity: 0;
-	
 	  // }
-	
 	  // .alert.top {
-	
 	  //   position: fixed;
-	
 	  //   top: 30px;
-	
 	  //   margin: 0 auto;
-	
 	  //   left: 0;
-	
 	  //   right: 0;
-	
 	  //   z-index: 1050;
-	
 	  // }
-	
 	  // .alert.top-right {
-	
 	  //   position: fixed;
-	
 	  //   top: 30px;
-	
 	  //   right: 50px;
-	
 	  //   z-index: 1050;
-	
 	  // }
-	
 	  // </style>
 	
 	}; // <template>
-	
 	//   <div
-	
 	//     v-show="show"
-	
 	//     v-bind:class="{
-	
 	//       'alert':		true,
-	
 	//       'alert-success':(type == 'success'),
-	
 	//       'alert-warning':(type == 'warning'),
-	
 	//       'alert-info':	(type == 'info'),
-	
 	//       'alert-danger':	(type == 'danger'),
-	
 	//       'top': 			(placement === 'top'),
-	
 	//       'top-right': 	(placement === 'top-right')
-	
 	//     }"
-	
 	//     transition="fade"
-	
 	//     v-bind:style="{width:width}"
-	
 	//     role="alert">
-	
 	//     <button v-show="dismissable" type="button" class="close"
-	
 	//       @click="show = false">
-	
 	//       <span>&times;</span>
-	
 	//     </button>
-	
 	//     <slot></slot>
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script>
 
@@ -2830,7 +2772,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 106 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div\r\n    v-show=\"show\"\r\n    v-bind:class=\"{\r\n      'alert':\t\ttrue,\r\n      'alert-success':(type == 'success'),\r\n      'alert-warning':(type == 'warning'),\r\n      'alert-info':\t(type == 'info'),\r\n      'alert-danger':\t(type == 'danger'),\r\n      'top': \t\t\t(placement === 'top'),\r\n      'top-right': \t(placement === 'top-right')\r\n    }\"\r\n    transition=\"fade\"\r\n    v-bind:style=\"{width:width}\"\r\n    role=\"alert\">\r\n    <button v-show=\"dismissable\" type=\"button\" class=\"close\"\r\n      @click=\"show = false\">\r\n      <span>&times;</span>\r\n    </button>\r\n    <slot></slot>\r\n  </div>";
+	module.exports = "<div\n    v-show=\"show\"\n    v-bind:class=\"{\n      'alert':\t\ttrue,\n      'alert-success':(type == 'success'),\n      'alert-warning':(type == 'warning'),\n      'alert-info':\t(type == 'info'),\n      'alert-danger':\t(type == 'danger'),\n      'top': \t\t\t(placement === 'top'),\n      'top-right': \t(placement === 'top-right')\n    }\"\n    transition=\"fade\"\n    v-bind:style=\"{width:width}\"\n    role=\"alert\">\n    <button v-show=\"dismissable\" type=\"button\" class=\"close\"\n      @click=\"show = false\">\n      <span>&times;</span>\n    </button>\n    <slot></slot>\n  </div>";
 
 /***/ }),
 /* 107 */
@@ -2873,8 +2815,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-b41c2644&file=Aside.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Aside.vue", function() {
-				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-b41c2644&file=Aside.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Aside.vue");
+			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-5da293de&file=Aside.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Aside.vue", function() {
+				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-5da293de&file=Aside.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Aside.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -2892,7 +2834,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, ".aside-open {\r\n  transition: -webkit-transform 0.3s;\r\n  transition: transform 0.3s;\r\n  transition: transform 0.3s, -webkit-transform 0.3s;\r\n}\r\n.aside-open.has-push-right {\r\n  -webkit-transform: translateX(-300px);\r\n          transform: translateX(-300px);\r\n}\r\n.aside {\r\n    position: fixed;\r\n    top: 0;\r\n    bottom: 0;\r\n    z-index: 1049;\r\n    overflow: auto;\r\n    background: #fff;\r\n}\r\n.aside.left {\r\n  left: 0;\r\n  right: auto;\r\n}\r\n.aside.right {\r\n  left: auto;\r\n  right: 0;\r\n}\r\n.slideleft-enter {\r\n  -webkit-animation:slideleft-in .3s;\r\n          animation:slideleft-in .3s;\r\n}\r\n.slideleft-leave {\r\n  -webkit-animation:slideleft-out .3s;\r\n          animation:slideleft-out .3s;\r\n}\r\n@-webkit-keyframes slideleft-in {\r\n  0% {\r\n    -webkit-transform: translateX(-100%);\r\n            transform: translateX(-100%);\r\n    opacity: 0;\r\n  }\r\n  100% {\r\n    -webkit-transform: translateX(0);\r\n            transform: translateX(0);\r\n    opacity: 1;\r\n  }\r\n}\r\n@keyframes slideleft-in {\r\n  0% {\r\n    -webkit-transform: translateX(-100%);\r\n            transform: translateX(-100%);\r\n    opacity: 0;\r\n  }\r\n  100% {\r\n    -webkit-transform: translateX(0);\r\n            transform: translateX(0);\r\n    opacity: 1;\r\n  }\r\n}\r\n@-webkit-keyframes slideleft-out {\r\n  0% {\r\n    -webkit-transform: translateX(0);\r\n            transform: translateX(0);\r\n    opacity: 1;\r\n  }\r\n  100% {\r\n    -webkit-transform: translateX(-100%);\r\n            transform: translateX(-100%);\r\n    opacity: 0;\r\n  }\r\n}\r\n@keyframes slideleft-out {\r\n  0% {\r\n    -webkit-transform: translateX(0);\r\n            transform: translateX(0);\r\n    opacity: 1;\r\n  }\r\n  100% {\r\n    -webkit-transform: translateX(-100%);\r\n            transform: translateX(-100%);\r\n    opacity: 0;\r\n  }\r\n}\r\n.slideright-enter {\r\n  -webkit-animation:slideright-in .3s;\r\n          animation:slideright-in .3s;\r\n}\r\n.slideright-leave {\r\n  -webkit-animation:slideright-out .3s;\r\n          animation:slideright-out .3s;\r\n}\r\n@-webkit-keyframes slideright-in {\r\n  0% {\r\n    -webkit-transform: translateX(100%);\r\n            transform: translateX(100%);\r\n    opacity: 0;\r\n  }\r\n  100% {\r\n    -webkit-transform: translateX(0);\r\n            transform: translateX(0);\r\n    opacity: 1;\r\n  }\r\n}\r\n@keyframes slideright-in {\r\n  0% {\r\n    -webkit-transform: translateX(100%);\r\n            transform: translateX(100%);\r\n    opacity: 0;\r\n  }\r\n  100% {\r\n    -webkit-transform: translateX(0);\r\n            transform: translateX(0);\r\n    opacity: 1;\r\n  }\r\n}\r\n@-webkit-keyframes slideright-out {\r\n  0% {\r\n    -webkit-transform: translateX(0);\r\n            transform: translateX(0);\r\n    opacity: 1;\r\n  }\r\n  100% {\r\n    -webkit-transform: translateX(100%);\r\n            transform: translateX(100%);\r\n    opacity: 0;\r\n  }\r\n}\r\n@keyframes slideright-out {\r\n  0% {\r\n    -webkit-transform: translateX(0);\r\n            transform: translateX(0);\r\n    opacity: 1;\r\n  }\r\n  100% {\r\n    -webkit-transform: translateX(100%);\r\n            transform: translateX(100%);\r\n    opacity: 0;\r\n  }\r\n}\r\n.aside:focus {\r\n    outline: 0\r\n}\r\n@media (max-width: 991px) {\r\n  .aside {\r\n    min-width:240px\r\n  }\r\n}\r\n.aside.left {\r\n  right: auto;\r\n  left: 0\r\n}\r\n.aside.right {\r\n  right: 0;\r\n  left: auto\r\n}\r\n.aside .aside-dialog .aside-header {\r\n  border-bottom: 1px solid #e5e5e5;\r\n  min-height: 16.43px;\r\n  padding: 6px 15px;\r\n  background: #337ab7;\r\n  color: #fff\r\n}\r\n.aside .aside-dialog .aside-header .close {\r\n  margin-right: -8px;\r\n  padding: 4px 8px;\r\n  color: #fff;\r\n  font-size: 25px;\r\n  opacity: .8\r\n}\r\n.aside .aside-dialog .aside-body {\r\n  position: relative;\r\n  padding: 15px\r\n}\r\n.aside .aside-dialog .aside-footer {\r\n  padding: 15px;\r\n  text-align: right;\r\n  border-top: 1px solid #e5e5e5\r\n}\r\n.aside .aside-dialog .aside-footer .btn+.btn {\r\n  margin-left: 5px;\r\n  margin-bottom: 0\r\n}\r\n.aside .aside-dialog .aside-footer .btn-group .btn+.btn {\r\n  margin-left: -1px\r\n}\r\n.aside .aside-dialog .aside-footer .btn-block+.btn-block {\r\n  margin-left: 0\r\n}\r\n.aside-backdrop {\r\n  position: fixed;\r\n  top: 0;\r\n  right: 0;\r\n  bottom: 0;\r\n  left: 0;\r\n  z-index: 1040;\r\n  opacity: 0;\r\n  transition: opacity .3s ease;\r\n  background-color: #000\r\n}\r\n.aside-backdrop.in {\r\n  opacity: .5;\r\n  filter: alpha(opacity=50)\r\n}", ""]);
+	exports.push([module.id, ".aside-open {\n  transition: -webkit-transform 0.3s;\n  transition: transform 0.3s;\n  transition: transform 0.3s, -webkit-transform 0.3s;\n}\n.aside-open.has-push-right {\n  -webkit-transform: translateX(-300px);\n          transform: translateX(-300px);\n}\n.aside {\n    position: fixed;\n    top: 0;\n    bottom: 0;\n    z-index: 1049;\n    overflow: auto;\n    background: #fff;\n}\n.aside.left {\n  left: 0;\n  right: auto;\n}\n.aside.right {\n  left: auto;\n  right: 0;\n}\n.slideleft-enter {\n  -webkit-animation:slideleft-in .3s;\n          animation:slideleft-in .3s;\n}\n.slideleft-leave {\n  -webkit-animation:slideleft-out .3s;\n          animation:slideleft-out .3s;\n}\n@-webkit-keyframes slideleft-in {\n  0% {\n    -webkit-transform: translateX(-100%);\n            transform: translateX(-100%);\n    opacity: 0;\n  }\n  100% {\n    -webkit-transform: translateX(0);\n            transform: translateX(0);\n    opacity: 1;\n  }\n}\n@keyframes slideleft-in {\n  0% {\n    -webkit-transform: translateX(-100%);\n            transform: translateX(-100%);\n    opacity: 0;\n  }\n  100% {\n    -webkit-transform: translateX(0);\n            transform: translateX(0);\n    opacity: 1;\n  }\n}\n@-webkit-keyframes slideleft-out {\n  0% {\n    -webkit-transform: translateX(0);\n            transform: translateX(0);\n    opacity: 1;\n  }\n  100% {\n    -webkit-transform: translateX(-100%);\n            transform: translateX(-100%);\n    opacity: 0;\n  }\n}\n@keyframes slideleft-out {\n  0% {\n    -webkit-transform: translateX(0);\n            transform: translateX(0);\n    opacity: 1;\n  }\n  100% {\n    -webkit-transform: translateX(-100%);\n            transform: translateX(-100%);\n    opacity: 0;\n  }\n}\n.slideright-enter {\n  -webkit-animation:slideright-in .3s;\n          animation:slideright-in .3s;\n}\n.slideright-leave {\n  -webkit-animation:slideright-out .3s;\n          animation:slideright-out .3s;\n}\n@-webkit-keyframes slideright-in {\n  0% {\n    -webkit-transform: translateX(100%);\n            transform: translateX(100%);\n    opacity: 0;\n  }\n  100% {\n    -webkit-transform: translateX(0);\n            transform: translateX(0);\n    opacity: 1;\n  }\n}\n@keyframes slideright-in {\n  0% {\n    -webkit-transform: translateX(100%);\n            transform: translateX(100%);\n    opacity: 0;\n  }\n  100% {\n    -webkit-transform: translateX(0);\n            transform: translateX(0);\n    opacity: 1;\n  }\n}\n@-webkit-keyframes slideright-out {\n  0% {\n    -webkit-transform: translateX(0);\n            transform: translateX(0);\n    opacity: 1;\n  }\n  100% {\n    -webkit-transform: translateX(100%);\n            transform: translateX(100%);\n    opacity: 0;\n  }\n}\n@keyframes slideright-out {\n  0% {\n    -webkit-transform: translateX(0);\n            transform: translateX(0);\n    opacity: 1;\n  }\n  100% {\n    -webkit-transform: translateX(100%);\n            transform: translateX(100%);\n    opacity: 0;\n  }\n}\n.aside:focus {\n    outline: 0\n}\n@media (max-width: 991px) {\n  .aside {\n    min-width:240px\n  }\n}\n.aside.left {\n  right: auto;\n  left: 0\n}\n.aside.right {\n  right: 0;\n  left: auto\n}\n.aside .aside-dialog .aside-header {\n  border-bottom: 1px solid #e5e5e5;\n  min-height: 16.43px;\n  padding: 6px 15px;\n  background: #337ab7;\n  color: #fff\n}\n.aside .aside-dialog .aside-header .close {\n  margin-right: -8px;\n  padding: 4px 8px;\n  color: #fff;\n  font-size: 25px;\n  opacity: .8\n}\n.aside .aside-dialog .aside-body {\n  position: relative;\n  padding: 15px\n}\n.aside .aside-dialog .aside-footer {\n  padding: 15px;\n  text-align: right;\n  border-top: 1px solid #e5e5e5\n}\n.aside .aside-dialog .aside-footer .btn+.btn {\n  margin-left: 5px;\n  margin-bottom: 0\n}\n.aside .aside-dialog .aside-footer .btn-group .btn+.btn {\n  margin-left: -1px\n}\n.aside .aside-dialog .aside-footer .btn-block+.btn-block {\n  margin-left: 0\n}\n.aside-backdrop {\n  position: fixed;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n  z-index: 1040;\n  opacity: 0;\n  transition: opacity .3s ease;\n  background-color: #000\n}\n.aside-backdrop.in {\n  opacity: .5;\n  filter: alpha(opacity=50)\n}", ""]);
 	
 	// exports
 
@@ -2916,57 +2858,31 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	//   <div class="aside"
-	
 	//     v-bind:style="{width:width + 'px'}"
-	
 	//     v-bind:class="{
-	
 	//     left:placement === 'left',
-	
 	//     right:placement === 'right'
-	
 	//     }"
-	
 	//     v-show="show"
-	
 	//     :transition="(this.placement === 'left') ? 'slideleft' : 'slideright'">
-	
 	//     <div class="aside-dialog">
-	
 	//       <div class="aside-content">
-	
 	//         <div class="aside-header">
-	
 	//           <button type="button" class="close" @click='close'><span>&times;</span></button>
-	
 	//           <h4 class="aside-title">
-	
 	//           <slot name="header">
-	
 	//             {{ header }}
-	
 	//           </slot>
-	
 	//           </h4>
-	
 	//         </div>
-	
 	//         <div class="aside-body">
-	
 	//           <slot></slot>
-	
 	//         </div>
-	
 	//       </div>
-	
 	//     </div>
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -3033,285 +2949,145 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 	  // </script>
 	
-	
 	  // <style>
-	
 	  // .aside-open {
-	
 	  //   transition: transform 0.3s;
-	
 	  // }
-	
 	  // .aside-open.has-push-right {
-	
 	  //   transform: translateX(-300px);
-	
 	  // }
-	
 	  // .aside {
-	
 	  //     position: fixed;
-	
 	  //     top: 0;
-	
 	  //     bottom: 0;
-	
 	  //     z-index: 1049;
-	
 	  //     overflow: auto;
-	
 	  //     background: #fff;
-	
 	  // }
-	
 	  // .aside.left {
-	
 	  //   left: 0;
-	
 	  //   right: auto;
-	
 	  // }
-	
 	  // .aside.right {
-	
 	  //   left: auto;
-	
 	  //   right: 0;
-	
 	  // }
-	
 	  // .slideleft-enter {
-	
 	  //   animation:slideleft-in .3s;
-	
 	  // }
-	
 	  // .slideleft-leave {
-	
 	  //   animation:slideleft-out .3s;
-	
 	  // }
-	
 	  // @keyframes slideleft-in {
-	
 	  //   0% {
-	
 	  //     transform: translateX(-100%);
-	
 	  //     opacity: 0;
-	
 	  //   }
-	
 	  //   100% {
-	
 	  //     transform: translateX(0);
-	
 	  //     opacity: 1;
-	
 	  //   }
-	
 	  // }
-	
 	  // @keyframes slideleft-out {
-	
 	  //   0% {
-	
 	  //     transform: translateX(0);
-	
 	  //     opacity: 1;
-	
 	  //   }
-	
 	  //   100% {
-	
 	  //     transform: translateX(-100%);
-	
 	  //     opacity: 0;
-	
 	  //   }
-	
 	  // }
-	
 	  // .slideright-enter {
-	
 	  //   animation:slideright-in .3s;
-	
 	  // }
-	
 	  // .slideright-leave {
-	
 	  //   animation:slideright-out .3s;
-	
 	  // }
-	
 	  // @keyframes slideright-in {
-	
 	  //   0% {
-	
 	  //     transform: translateX(100%);
-	
 	  //     opacity: 0;
-	
 	  //   }
-	
 	  //   100% {
-	
 	  //     transform: translateX(0);
-	
 	  //     opacity: 1;
-	
 	  //   }
-	
 	  // }
-	
 	  // @keyframes slideright-out {
-	
 	  //   0% {
-	
 	  //     transform: translateX(0);
-	
 	  //     opacity: 1;
-	
 	  //   }
-	
 	  //   100% {
-	
 	  //     transform: translateX(100%);
-	
 	  //     opacity: 0;
-	
 	  //   }
-	
 	  // }
-	
 	  // .aside:focus {
-	
 	  //     outline: 0
-	
 	  // }
-	
 	  // @media (max-width: 991px) {
-	
 	  //   .aside {
-	
 	  //     min-width:240px
-	
 	  //   }
-	
 	  // }
-	
 	  // .aside.left {
-	
 	  //   right: auto;
-	
 	  //   left: 0
-	
 	  // }
-	
 	  // .aside.right {
-	
 	  //   right: 0;
-	
 	  //   left: auto
-	
 	  // }
-	
 	  // .aside .aside-dialog .aside-header {
-	
 	  //   border-bottom: 1px solid #e5e5e5;
-	
 	  //   min-height: 16.43px;
-	
 	  //   padding: 6px 15px;
-	
 	  //   background: #337ab7;
-	
 	  //   color: #fff
-	
 	  // }
-	
 	  // .aside .aside-dialog .aside-header .close {
-	
 	  //   margin-right: -8px;
-	
 	  //   padding: 4px 8px;
-	
 	  //   color: #fff;
-	
 	  //   font-size: 25px;
-	
 	  //   opacity: .8
-	
 	  // }
-	
 	  // .aside .aside-dialog .aside-body {
-	
 	  //   position: relative;
-	
 	  //   padding: 15px
-	
 	  // }
-	
 	  // .aside .aside-dialog .aside-footer {
-	
 	  //   padding: 15px;
-	
 	  //   text-align: right;
-	
 	  //   border-top: 1px solid #e5e5e5
-	
 	  // }
-	
 	  // .aside .aside-dialog .aside-footer .btn+.btn {
-	
 	  //   margin-left: 5px;
-	
 	  //   margin-bottom: 0
-	
 	  // }
-	
 	  // .aside .aside-dialog .aside-footer .btn-group .btn+.btn {
-	
 	  //   margin-left: -1px
-	
 	  // }
-	
 	  // .aside .aside-dialog .aside-footer .btn-block+.btn-block {
-	
 	  //   margin-left: 0
-	
 	  // }
-	
 	  // .aside-backdrop {
-	
 	  //   position: fixed;
-	
 	  //   top: 0;
-	
 	  //   right: 0;
-	
 	  //   bottom: 0;
-	
 	  //   left: 0;
-	
 	  //   z-index: 1040;
-	
 	  //   opacity: 0;
-	
 	  //   transition: opacity .3s ease;
-	
 	  //   background-color: #000
-	
 	  // }
-	
 	  // .aside-backdrop.in {
-	
 	  //   opacity: .5;
-	
 	  //   filter: alpha(opacity=50)
-	
 	  // }
-	
 	  // </style>
 	
 	};
@@ -3320,7 +3096,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 111 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div class=\"aside\"\r\n    v-bind:style=\"{width:width + 'px'}\"\r\n    v-bind:class=\"{\r\n    left:placement === 'left',\r\n    right:placement === 'right'\r\n    }\"\r\n    v-show=\"show\"\r\n    :transition=\"(this.placement === 'left') ? 'slideleft' : 'slideright'\">\r\n    <div class=\"aside-dialog\">\r\n      <div class=\"aside-content\">\r\n        <div class=\"aside-header\">\r\n          <button type=\"button\" class=\"close\" @click='close'><span>&times;</span></button>\r\n          <h4 class=\"aside-title\">\r\n          <slot name=\"header\">\r\n            {{ header }}\r\n          </slot>\r\n          </h4>\r\n        </div>\r\n        <div class=\"aside-body\">\r\n          <slot></slot>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>";
+	module.exports = "<div class=\"aside\"\n    v-bind:style=\"{width:width + 'px'}\"\n    v-bind:class=\"{\n    left:placement === 'left',\n    right:placement === 'right'\n    }\"\n    v-show=\"show\"\n    :transition=\"(this.placement === 'left') ? 'slideleft' : 'slideright'\">\n    <div class=\"aside-dialog\">\n      <div class=\"aside-content\">\n        <div class=\"aside-header\">\n          <button type=\"button\" class=\"close\" @click='close'><span>&times;</span></button>\n          <h4 class=\"aside-title\">\n          <slot name=\"header\">\n            {{ header }}\n          </slot>\n          </h4>\n        </div>\n        <div class=\"aside-body\">\n          <slot></slot>\n        </div>\n      </div>\n    </div>\n  </div>";
 
 /***/ }),
 /* 112 */
@@ -3338,10 +3114,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	if (!hotAPI.compatible) return
 	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Carousel.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Carousel.vue","-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-6378502a&file=Carousel.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Carousel.vue"], function () {
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Carousel.vue","-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-cc9b6dac&file=Carousel.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Carousel.vue"], function () {
 	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Carousel.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-6378502a&file=Carousel.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Carousel.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-cc9b6dac&file=Carousel.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Carousel.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -3363,8 +3139,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-6378502a&file=Carousel.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Carousel.vue", function() {
-				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-6378502a&file=Carousel.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Carousel.vue");
+			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-cc9b6dac&file=Carousel.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Carousel.vue", function() {
+				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-cc9b6dac&file=Carousel.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Carousel.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -3382,7 +3158,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, ".carousel-control[_v-6378502a] {\r\n  cursor: pointer;\r\n}", ""]);
+	exports.push([module.id, ".carousel-control[_v-cc9b6dac] {\n  cursor: pointer;\n}", ""]);
 	
 	// exports
 
@@ -3406,47 +3182,26 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	// <div class="carousel slide" data-ride="carousel">
-	
 	//   <!-- Indicators -->
-	
 	//   <ol class="carousel-indicators" v-show="indicators">
-	
 	//     <li v-for="i in indicator" @click="indicatorClick($index)" v-bind:class="{active:$index === index}"><span></span></li>
-	
 	//   </ol>
-	
 	//   <!-- Wrapper for slides -->
-	
 	//   <div class="carousel-inner" role="listbox">
-	
 	//     <slot></slot>
-	
 	//   </div>
-	
 	//   <!-- Controls -->
-	
 	//   <div v-show="controls" class="carousel-controls hidden-xs">
-	
 	//     <a class="left carousel-control" role="button" @click="prev">
-	
 	//       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-	
 	//     </a>
-	
 	//     <a class="right carousel-control" role="button" @click="next">
-	
 	//       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-	
 	//     </a>
-	
 	//   </div>
-	
 	// </div>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -3550,22 +3305,17 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 	// </script>
 	
-	
 	// <style scoped>
-	
 	// .carousel-control {
-	
 	//   cursor: pointer;
-	
 	// }
-	
 	// </style>
 
 /***/ }),
 /* 116 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div class=\"carousel slide\" data-ride=\"carousel\" _v-6378502a=\"\">\n  <!-- Indicators -->\n  <ol class=\"carousel-indicators\" v-show=\"indicators\" _v-6378502a=\"\">\n    <li v-for=\"i in indicator\" @click=\"indicatorClick($index)\" v-bind:class=\"{active:$index === index}\" _v-6378502a=\"\"><span _v-6378502a=\"\"></span></li>\n  </ol>\n  <!-- Wrapper for slides -->\n  <div class=\"carousel-inner\" role=\"listbox\" _v-6378502a=\"\">\n    <slot _v-6378502a=\"\"></slot>\n  </div>\n  <!-- Controls -->\n  <div v-show=\"controls\" class=\"carousel-controls hidden-xs\" _v-6378502a=\"\">\n    <a class=\"left carousel-control\" role=\"button\" @click=\"prev\" _v-6378502a=\"\">\n      <span class=\"glyphicon glyphicon-chevron-left\" aria-hidden=\"true\" _v-6378502a=\"\"></span>\n    </a>\n    <a class=\"right carousel-control\" role=\"button\" @click=\"next\" _v-6378502a=\"\">\n      <span class=\"glyphicon glyphicon-chevron-right\" aria-hidden=\"true\" _v-6378502a=\"\"></span>\n    </a>\n  </div>\n</div>";
+	module.exports = "<div class=\"carousel slide\" data-ride=\"carousel\" _v-cc9b6dac=\"\">\n  <!-- Indicators -->\n  <ol class=\"carousel-indicators\" v-show=\"indicators\" _v-cc9b6dac=\"\">\n    <li v-for=\"i in indicator\" @click=\"indicatorClick($index)\" v-bind:class=\"{active:$index === index}\" _v-cc9b6dac=\"\"><span _v-cc9b6dac=\"\"></span></li>\n  </ol>\n  <!-- Wrapper for slides -->\n  <div class=\"carousel-inner\" role=\"listbox\" _v-cc9b6dac=\"\">\n    <slot _v-cc9b6dac=\"\"></slot>\n  </div>\n  <!-- Controls -->\n  <div v-show=\"controls\" class=\"carousel-controls hidden-xs\" _v-cc9b6dac=\"\">\n    <a class=\"left carousel-control\" role=\"button\" @click=\"prev\" _v-cc9b6dac=\"\">\n      <span class=\"glyphicon glyphicon-chevron-left\" aria-hidden=\"true\" _v-cc9b6dac=\"\"></span>\n    </a>\n    <a class=\"right carousel-control\" role=\"button\" @click=\"next\" _v-cc9b6dac=\"\">\n      <span class=\"glyphicon glyphicon-chevron-right\" aria-hidden=\"true\" _v-cc9b6dac=\"\"></span>\n    </a>\n  </div>\n</div>";
 
 /***/ }),
 /* 117 */
@@ -3583,10 +3333,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	if (!hotAPI.compatible) return
 	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Checkbox.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Checkbox.vue","-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-cb25bde6&file=Checkbox.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Checkbox.vue"], function () {
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Checkbox.vue","-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-5eb1cbe6&file=Checkbox.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Checkbox.vue"], function () {
 	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Checkbox.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-cb25bde6&file=Checkbox.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Checkbox.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-5eb1cbe6&file=Checkbox.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Checkbox.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -3608,8 +3358,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-cb25bde6&file=Checkbox.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Checkbox.vue", function() {
-				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-cb25bde6&file=Checkbox.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Checkbox.vue");
+			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-5eb1cbe6&file=Checkbox.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Checkbox.vue", function() {
+				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-5eb1cbe6&file=Checkbox.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Checkbox.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -3627,7 +3377,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, "label.checkbox[_v-cb25bde6] {\r\n  position: relative;\r\n  padding-left: 18px;\r\n}\r\nlabel.checkbox > input[_v-cb25bde6] {\r\n  box-sizing: border-box;\r\n  position: absolute;\r\n  z-index: -1;\r\n  padding: 0;\r\n  opacity: 0;\r\n  margin: 0;\r\n}\r\nlabel.checkbox > .icon[_v-cb25bde6] {\r\n  position: absolute;\r\n  top: .2rem;\r\n  left: 0;\r\n  display: block;\r\n  width: 1.4rem;\r\n  height: 1.4rem;\r\n  line-height:1rem;\r\n  text-align: center;\r\n  -webkit-user-select: none;\r\n     -moz-user-select: none;\r\n      -ms-user-select: none;\r\n          user-select: none;\r\n  border-radius: .35rem;\r\n  background-repeat: no-repeat;\r\n  background-position: center center;\r\n  background-size: 50% 50%;\r\n}\r\nlabel.checkbox:not(.active) > .icon[_v-cb25bde6] {\r\n  background-color: #ddd;\r\n  border: 1px solid #bbb;\r\n}\r\nlabel.checkbox > input:focus ~ .icon[_v-cb25bde6] {\r\n  outline: 0;\r\n  border: 1px solid #66afe9;\r\n  box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);\r\n}\r\nlabel.checkbox.active > .icon[_v-cb25bde6] {\r\n  background-size: 1rem 1rem;\r\n  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNyIgaGVpZ2h0PSI3Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJtNS43MywwLjUybC0zLjEyNDIyLDMuMzQxNjFsLTEuMzM4OTUsLTEuNDMyMTJsLTEuMjQ5NjksMS4zMzY2NWwyLjU4ODYzLDIuNzY4NzZsNC4zNzM5LC00LjY3ODI2bC0xLjI0OTY5LC0xLjMzNjY1bDAsMGwwLjAwMDAyLDAuMDAwMDF6Ii8+PC9zdmc+);\r\n}\r\nlabel.checkbox.active .btn-default[_v-cb25bde6] { -webkit-filter: brightness(75%); filter: brightness(75%); }\r\n\r\nlabel.checkbox.disabled[_v-cb25bde6],\r\nlabel.checkbox.readonly[_v-cb25bde6],\r\n.btn.readonly[_v-cb25bde6] {\r\n  filter: alpha(opacity=65);\r\n  box-shadow: none;\r\n  opacity: .65;\r\n}\r\nlabel.btn > input[type=checkbox][_v-cb25bde6] {\r\n  position: absolute;\r\n  clip: rect(0,0,0,0);\r\n  pointer-events: none;\r\n}", ""]);
+	exports.push([module.id, "label.checkbox[_v-5eb1cbe6] {\n  position: relative;\n  padding-left: 18px;\n}\nlabel.checkbox > input[_v-5eb1cbe6] {\n  box-sizing: border-box;\n  position: absolute;\n  z-index: -1;\n  padding: 0;\n  opacity: 0;\n  margin: 0;\n}\nlabel.checkbox > .icon[_v-5eb1cbe6] {\n  position: absolute;\n  top: .2rem;\n  left: 0;\n  display: block;\n  width: 1.4rem;\n  height: 1.4rem;\n  line-height:1rem;\n  text-align: center;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  border-radius: .35rem;\n  background-repeat: no-repeat;\n  background-position: center center;\n  background-size: 50% 50%;\n}\nlabel.checkbox:not(.active) > .icon[_v-5eb1cbe6] {\n  background-color: #ddd;\n  border: 1px solid #bbb;\n}\nlabel.checkbox > input:focus ~ .icon[_v-5eb1cbe6] {\n  outline: 0;\n  border: 1px solid #66afe9;\n  box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);\n}\nlabel.checkbox.active > .icon[_v-5eb1cbe6] {\n  background-size: 1rem 1rem;\n  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNyIgaGVpZ2h0PSI3Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJtNS43MywwLjUybC0zLjEyNDIyLDMuMzQxNjFsLTEuMzM4OTUsLTEuNDMyMTJsLTEuMjQ5NjksMS4zMzY2NWwyLjU4ODYzLDIuNzY4NzZsNC4zNzM5LC00LjY3ODI2bC0xLjI0OTY5LC0xLjMzNjY1bDAsMGwwLjAwMDAyLDAuMDAwMDF6Ii8+PC9zdmc+);\n}\nlabel.checkbox.active .btn-default[_v-5eb1cbe6] { -webkit-filter: brightness(75%); filter: brightness(75%); }\n\nlabel.checkbox.disabled[_v-5eb1cbe6],\nlabel.checkbox.readonly[_v-5eb1cbe6],\n.btn.readonly[_v-5eb1cbe6] {\n  filter: alpha(opacity=65);\n  box-shadow: none;\n  opacity: .65;\n}\nlabel.btn > input[type=checkbox][_v-5eb1cbe6] {\n  position: absolute;\n  clip: rect(0,0,0,0);\n  pointer-events: none;\n}", ""]);
 	
 	// exports
 
@@ -3746,148 +3496,78 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 	  // </script>
 	
-	
 	  // <style scoped>
-	
 	  // label.checkbox {
-	
 	  //   position: relative;
-	
 	  //   padding-left: 18px;
-	
 	  // }
-	
 	  // label.checkbox > input {
-	
 	  //   box-sizing: border-box;
-	
 	  //   position: absolute;
-	
 	  //   z-index: -1;
-	
 	  //   padding: 0;
-	
 	  //   opacity: 0;
-	
 	  //   margin: 0;
-	
 	  // }
-	
 	  // label.checkbox > .icon {
-	
 	  //   position: absolute;
-	
 	  //   top: .2rem;
-	
 	  //   left: 0;
-	
 	  //   display: block;
-	
 	  //   width: 1.4rem;
-	
 	  //   height: 1.4rem;
-	
 	  //   line-height:1rem;
-	
 	  //   text-align: center;
-	
 	  //   user-select: none;
-	
 	  //   border-radius: .35rem;
-	
 	  //   background-repeat: no-repeat;
-	
 	  //   background-position: center center;
-	
 	  //   background-size: 50% 50%;
-	
 	  // }
-	
 	  // label.checkbox:not(.active) > .icon {
-	
 	  //   background-color: #ddd;
-	
 	  //   border: 1px solid #bbb;
-	
 	  // }
-	
 	  // label.checkbox > input:focus ~ .icon {
-	
 	  //   outline: 0;
-	
 	  //   border: 1px solid #66afe9;
-	
 	  //   box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
-	
 	  // }
-	
 	  // label.checkbox.active > .icon {
-	
 	  //   background-size: 1rem 1rem;
-	
 	  //   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNyIgaGVpZ2h0PSI3Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJtNS43MywwLjUybC0zLjEyNDIyLDMuMzQxNjFsLTEuMzM4OTUsLTEuNDMyMTJsLTEuMjQ5NjksMS4zMzY2NWwyLjU4ODYzLDIuNzY4NzZsNC4zNzM5LC00LjY3ODI2bC0xLjI0OTY5LC0xLjMzNjY1bDAsMGwwLjAwMDAyLDAuMDAwMDF6Ii8+PC9zdmc+);
-	
 	  // }
-	
 	  // label.checkbox.active .btn-default { filter: brightness(75%); }
 	
-	
 	  // label.checkbox.disabled,
-	
 	  // label.checkbox.readonly,
-	
 	  // .btn.readonly {
-	
 	  //   filter: alpha(opacity=65);
-	
 	  //   box-shadow: none;
-	
 	  //   opacity: .65;
-	
 	  // }
-	
 	  // label.btn > input[type=checkbox] {
-	
 	  //   position: absolute;
-	
 	  //   clip: rect(0,0,0,0);
-	
 	  //   pointer-events: none;
-	
 	  // }
-	
 	  // </style>
 	
 	}; // <template>
-	
 	//   <label :class="[isButton?'btn btn-'+typeColor:'open checkbox '+typeColor,{active:checked,disabled:disabled,readonly:readonly}]" @click.prevent="toggle">
-	
 	//     <input type="checkbox" autocomplete="off"
-	
 	//       v-el:input
-	
 	//       :checked="active"
-	
 	//       :value="value"
-	
 	//       :name="name"
-	
 	//       :readonly="readonly"
-	
 	//       :disabled="disabled"
-	
 	//     />
-	
 	//     <span v-if="!isButton" class="icon dropdown-toggle" :class="[active?'btn-'+typeColor:'',{bg:typeColor==='default'}]"></span>
-	
 	//     <span v-if="!isButton&active&&typeColor==='default'" class="icon"></span>
-	
 	//     <slot></slot>
-	
 	//   </label>
-	
 	// </template>
-	
 	
 	// <script>
 
@@ -3895,7 +3575,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 121 */
 /***/ (function(module, exports) {
 
-	module.exports = "<label :class=\"[isButton?'btn btn-'+typeColor:'open checkbox '+typeColor,{active:checked,disabled:disabled,readonly:readonly}]\" @click.prevent=\"toggle\" _v-cb25bde6=\"\">\n    <input type=\"checkbox\" autocomplete=\"off\" v-el:input=\"\" :checked=\"active\" :value=\"value\" :name=\"name\" :readonly=\"readonly\" :disabled=\"disabled\" _v-cb25bde6=\"\">\n    <span v-if=\"!isButton\" class=\"icon dropdown-toggle\" :class=\"[active?'btn-'+typeColor:'',{bg:typeColor==='default'}]\" _v-cb25bde6=\"\"></span>\n    <span v-if=\"!isButton&amp;active&amp;&amp;typeColor==='default'\" class=\"icon\" _v-cb25bde6=\"\"></span>\n    <slot _v-cb25bde6=\"\"></slot>\n  </label>";
+	module.exports = "<label :class=\"[isButton?'btn btn-'+typeColor:'open checkbox '+typeColor,{active:checked,disabled:disabled,readonly:readonly}]\" @click.prevent=\"toggle\" _v-5eb1cbe6=\"\">\n    <input type=\"checkbox\" autocomplete=\"off\" v-el:input=\"\" :checked=\"active\" :value=\"value\" :name=\"name\" :readonly=\"readonly\" :disabled=\"disabled\" _v-5eb1cbe6=\"\">\n    <span v-if=\"!isButton\" class=\"icon dropdown-toggle\" :class=\"[active?'btn-'+typeColor:'',{bg:typeColor==='default'}]\" _v-5eb1cbe6=\"\"></span>\n    <span v-if=\"!isButton&amp;active&amp;&amp;typeColor==='default'\" class=\"icon\" _v-5eb1cbe6=\"\"></span>\n    <slot _v-5eb1cbe6=\"\"></slot>\n  </label>";
 
 /***/ }),
 /* 122 */
@@ -3913,10 +3593,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	if (!hotAPI.compatible) return
 	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Dropdown.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Dropdown.vue","-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-6b08725b&file=Dropdown.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Dropdown.vue"], function () {
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Dropdown.vue","-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-bd7b294a&file=Dropdown.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Dropdown.vue"], function () {
 	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Dropdown.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-6b08725b&file=Dropdown.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Dropdown.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-bd7b294a&file=Dropdown.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Dropdown.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -3938,8 +3618,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-6b08725b&file=Dropdown.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Dropdown.vue", function() {
-				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-6b08725b&file=Dropdown.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Dropdown.vue");
+			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-bd7b294a&file=Dropdown.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Dropdown.vue", function() {
+				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-bd7b294a&file=Dropdown.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Dropdown.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -3957,7 +3637,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, ".secret[_v-6b08725b] {\r\n  position: absolute;\r\n  clip: rect(0 0 0 0);\r\n  overflow: hidden;\r\n  margin: -1px;\r\n  height: 1px;\r\n  width: 1px;\r\n  padding: 0;\r\n  border: 0;\r\n}", ""]);
+	exports.push([module.id, ".secret[_v-bd7b294a] {\n  position: absolute;\n  clip: rect(0 0 0 0);\n  overflow: hidden;\n  margin: -1px;\n  height: 1px;\n  width: 1px;\n  padding: 0;\n  border: 0;\n}", ""]);
 	
 	// exports
 
@@ -3981,63 +3661,34 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	//   <li v-if="isLi" v-el:dropdown :class="classes">
-	
 	//     <slot name="button">
-	
 	//       <a class="dropdown-toggle" role="button" :class="{disabled: disabled}" @keyup.esc="show = false">
-	
 	//         {{{ text }}}
-	
 	//         <span class="caret"></span>
-	
 	//       </a>
-	
 	//     </slot>
-	
 	//     <slot name="dropdown-menu">
-	
 	//       <ul v-else class="dropdown-menu">
-	
 	//         <slot></slot>
-	
 	//       </ul>
-	
 	//     </slot>
-	
 	//   </li>
-	
 	//   <div v-else v-el:dropdown :class="classes">
-	
 	//     <slot name="before"></slot>
-	
 	//     <slot name="button">
-	
 	//       <button type="button" class="btn btn-{{type}} dropdown-toggle" @keyup.esc="show = false" :disabled="disabled">
-	
 	//         {{ text }}
-	
 	//         <span class="caret"></span>
-	
 	//       </button>
-	
 	//     </slot>
-	
 	//     <slot name="dropdown-menu">
-	
 	//       <ul class="dropdown-menu">
-	
 	//         <slot></slot>
-	
 	//       </ul>
-	
 	//     </slot>
-	
 	//   </div>
-	
 	// </template>
-	
 	// <script>
 	exports.default = {
 	  props: {
@@ -4127,36 +3778,24 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 	// </script>
 	
-	
 	// <style scoped>
-	
 	// .secret {
-	
 	//   position: absolute;
-	
 	//   clip: rect(0 0 0 0);
-	
 	//   overflow: hidden;
-	
 	//   margin: -1px;
-	
 	//   height: 1px;
-	
 	//   width: 1px;
-	
 	//   padding: 0;
-	
 	//   border: 0;
-	
 	// }
-	
 	// </style>
 
 /***/ }),
 /* 126 */
 /***/ (function(module, exports) {
 
-	module.exports = "<li v-if=\"isLi\" v-el:dropdown=\"\" :class=\"classes\" _v-6b08725b=\"\">\n    <slot name=\"button\" _v-6b08725b=\"\">\n      <a class=\"dropdown-toggle\" role=\"button\" :class=\"{disabled: disabled}\" @keyup.esc=\"show = false\" _v-6b08725b=\"\">\n        {{{ text }}}\n        <span class=\"caret\" _v-6b08725b=\"\"></span>\n      </a>\n    </slot>\n    <slot name=\"dropdown-menu\" _v-6b08725b=\"\">\n      <ul v-else=\"\" class=\"dropdown-menu\" _v-6b08725b=\"\">\n        <slot _v-6b08725b=\"\"></slot>\n      </ul>\n    </slot>\n  </li>\n  <div v-else=\"\" v-el:dropdown=\"\" :class=\"classes\" _v-6b08725b=\"\">\n    <slot name=\"before\" _v-6b08725b=\"\"></slot>\n    <slot name=\"button\" _v-6b08725b=\"\">\n      <button type=\"button\" class=\"btn btn-{{type}} dropdown-toggle\" @keyup.esc=\"show = false\" :disabled=\"disabled\" _v-6b08725b=\"\">\n        {{ text }}\n        <span class=\"caret\" _v-6b08725b=\"\"></span>\n      </button>\n    </slot>\n    <slot name=\"dropdown-menu\" _v-6b08725b=\"\">\n      <ul class=\"dropdown-menu\" _v-6b08725b=\"\">\n        <slot _v-6b08725b=\"\"></slot>\n      </ul>\n    </slot>\n  </div>";
+	module.exports = "<li v-if=\"isLi\" v-el:dropdown=\"\" :class=\"classes\" _v-bd7b294a=\"\">\n    <slot name=\"button\" _v-bd7b294a=\"\">\n      <a class=\"dropdown-toggle\" role=\"button\" :class=\"{disabled: disabled}\" @keyup.esc=\"show = false\" _v-bd7b294a=\"\">\n        {{{ text }}}\n        <span class=\"caret\" _v-bd7b294a=\"\"></span>\n      </a>\n    </slot>\n    <slot name=\"dropdown-menu\" _v-bd7b294a=\"\">\n      <ul v-else=\"\" class=\"dropdown-menu\" _v-bd7b294a=\"\">\n        <slot _v-bd7b294a=\"\"></slot>\n      </ul>\n    </slot>\n  </li>\n  <div v-else=\"\" v-el:dropdown=\"\" :class=\"classes\" _v-bd7b294a=\"\">\n    <slot name=\"before\" _v-bd7b294a=\"\"></slot>\n    <slot name=\"button\" _v-bd7b294a=\"\">\n      <button type=\"button\" class=\"btn btn-{{type}} dropdown-toggle\" @keyup.esc=\"show = false\" :disabled=\"disabled\" _v-bd7b294a=\"\">\n        {{ text }}\n        <span class=\"caret\" _v-bd7b294a=\"\"></span>\n      </button>\n    </slot>\n    <slot name=\"dropdown-menu\" _v-bd7b294a=\"\">\n      <ul class=\"dropdown-menu\" _v-bd7b294a=\"\">\n        <slot _v-bd7b294a=\"\"></slot>\n      </ul>\n    </slot>\n  </div>";
 
 /***/ }),
 /* 127 */
@@ -4263,17 +3902,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	  // </script>
 	
 	}; // <template>
-	
 	//   <panel :header="header" :is-open="isOpen" :type="type" expandable no-switch>
-	
 	//     <slot name="button" slot="button"></slot>
-	
 	//     <retriever v-ref:retriever :src="src" :fragment="fragment" delay></retriever>
-	
 	//   </panel>
-	
 	// </template>
-	
 	
 	// <script>
 
@@ -4380,15 +4013,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 	// </script>
 	// <template>
-	
 	//   <div>
-	
 	//     Loading...
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script>
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(131)))
@@ -14663,7 +14291,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 133 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div>\r\n    Loading...\r\n  </div>";
+	module.exports = "<div>\n    Loading...\n  </div>";
 
 /***/ }),
 /* 134 */
@@ -14706,8 +14334,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-12b5ebaa&file=Panel.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Panel.vue", function() {
-				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-12b5ebaa&file=Panel.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Panel.vue");
+			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-6b32daac&file=Panel.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Panel.vue", function() {
+				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-6b32daac&file=Panel.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Panel.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -14725,7 +14353,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, ".panel-heading {\r\n        width: 100%;\r\n    }\r\n\r\n    .panel-title {\r\n        display: inline-block;\r\n        font-size: 1em;\r\n        vertical-align: middle;\r\n    }\r\n\r\n    .panel-title * {\r\n        margin: 0px;\r\n    }\r\n\r\n    .header-wrapper {\r\n        display: inline-block;\r\n        width: 72%;\r\n    }\r\n\r\n    .button-wrapper {\r\n        float: right;\r\n        display: inline-block;\r\n        width: 28%;\r\n    }\r\n\r\n    .accordion-toggle {\r\n        cursor: pointer;\r\n    }\r\n\r\n    .expandable-panel {\r\n        margin-bottom: 0 !important;\r\n        margin-top: 5px;\r\n    }\r\n\r\n    .panel-group > .panel-container > .expandable-panel {\r\n        margin-top: 0!important;\r\n    }\r\n\r\n    .panel-seamless {\r\n        padding: 0;\r\n    }\r\n\r\n    .caret.caret-collapse {\r\n        border-left: 4px dashed;\r\n        border-top: 4px solid transparent;\r\n        border-bottom: 4px solid transparent;\r\n        border-right: none;\r\n    }\r\n\r\n    .panel.panel-seamless {\r\n        box-shadow: none;\r\n        border: none;\r\n    }\r\n\r\n    .panel-seamless > .panel-heading {\r\n        padding: 0;\r\n    }\r\n\r\n    .panel-seamless > .panel-collapse > .panel-body {\r\n        padding: 10px 0;\r\n    }\r\n\r\n    .panel-body > .collapse-button {\r\n        margin-top: 5px;\r\n        opacity: 0.2;\r\n    }\r\n\r\n    .panel-body > .collapse-button:hover {\r\n        opacity: 1;\r\n    }\r\n\r\n    .close-button {\r\n        font-size: 10px !important;\r\n        float: right;\r\n        padding: 3px 8px !important;\r\n    }\r\n\r\n    .morph {\r\n        display: inline-block;\r\n    }", ""]);
+	exports.push([module.id, ".panel-heading {\n        width: 100%;\n    }\n\n    .panel-title {\n        display: inline-block;\n        font-size: 1em;\n        vertical-align: middle;\n    }\n\n    .panel-title * {\n        margin: 0px;\n    }\n\n    .header-wrapper {\n        display: inline-block;\n        width: 72%;\n    }\n\n    .button-wrapper {\n        float: right;\n        display: inline-block;\n        width: 28%;\n    }\n\n    .accordion-toggle {\n        cursor: pointer;\n    }\n\n    .expandable-panel {\n        margin-bottom: 0 !important;\n        margin-top: 5px;\n    }\n\n    .panel-group > .panel-container > .expandable-panel {\n        margin-top: 0!important;\n    }\n\n    .panel-seamless {\n        padding: 0;\n    }\n\n    .caret.caret-collapse {\n        border-left: 4px dashed;\n        border-top: 4px solid transparent;\n        border-bottom: 4px solid transparent;\n        border-right: none;\n    }\n\n    .panel.panel-seamless {\n        box-shadow: none;\n        border: none;\n    }\n\n    .panel-seamless > .panel-heading {\n        padding: 0;\n    }\n\n    .panel-seamless > .panel-collapse > .panel-body {\n        padding: 10px 0;\n    }\n\n    .panel-body > .collapse-button {\n        margin-top: 5px;\n        opacity: 0.2;\n    }\n\n    .panel-body > .collapse-button:hover {\n        opacity: 1;\n    }\n\n    .close-button {\n        font-size: 10px !important;\n        float: right;\n        padding: 3px 8px !important;\n    }\n\n    .morph {\n        display: inline-block;\n    }", ""]);
 	
 	// exports
 
@@ -14757,110 +14385,58 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	//     <span class="panel-container">
-	
 	//         <div class="morph" v-show="minimized">
-	
 	//             <div class="morph-display-wrapper" v-on:click="open()">
-	
 	//                 <button class="morph-display-button btn btn-default">
-	
 	//                     <template v-if="altContent">
-	
 	//                         <div class="panel-title">{{{altContent}}}</div>
-	
 	//                     </template>
-	
 	//                     <template v-else>
-	
 	//                         <slot name="header">
-	
 	//                             <div class="panel-title">{{{altContent}}}</div>
-	
 	//                         </slot>
-	
 	//                     </template>
-	
 	//                 </button>
-	
 	//             </div>
-	
 	//         </div>
-	
 	
 	//         <div :class="['panel', panelType, {'expandable-panel': isExpandablePanel}]" v-else>
-	
 	//             <div :class="['panel-heading',{'accordion-toggle':canCollapse}]"
-	
 	//                  @click.prevent.stop="canCollapse && toggle()"
-	
 	//                  @mouseover="onHeaderHover = true" @mouseleave="onHeaderHover = false">
-	
 	//                 <div class="header-wrapper">
-	
 	//                     <span :class="['caret', {'caret-collapse': !expanded}]" v-show="showCaret"></span>
-	
 	//                     <slot name="header">
-	
 	//                         <div class="panel-title">{{{headerContent}}}</div>
-	
 	//                     </slot>
-	
 	//                 </div>
-	
 	//                 <div class="button-wrapper">
-	
 	//                     <slot name="button">
-	
 	//                         <panel-switch v-show="canCollapse && !noSwitch && !showCaret" v-bind:is-open="expanded"
-	
 	//                                       @click.stop.prevent="expand()"></panel-switch>
-	
 	//                         <button type="button" class="close-button btn btn-default"
-	
 	//                                 v-show="this.type !== 'seamless' ? (!noClose) : onHeaderHover"
-	
 	//                                 @click.stop="close()">
-	
 	//                             <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
-	
 	//                         </button>
-	
 	//                     </slot>
-	
 	//                 </div>
-	
 	//             </div>
-	
 	//             <div class="panel-collapse"
-	
 	//                  v-el:panel
-	
 	//                  v-show="expanded"
-	
 	//             >
-	
 	//                 <div class="panel-body">
-	
 	//                     <slot></slot>
-	
 	//                     <retriever v-if="isDynamic" v-ref:retriever :src="src" :fragment="fragment" delay></retriever>
-	
 	//                     <panel-switch v-show="canCollapse && bottomSwitch" v-bind:is-open="expanded"
-	
 	//                                   @click.stop.prevent="collapseThenScrollIntoViewIfNeeded()"></panel-switch>
-	
 	//                 </div>
-	
 	//             </div>
-	
 	//         </div>
-	
 	//     </span>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -15049,153 +14625,87 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 	// </script>
 	
-	
 	// <style>
-	
 	//     .panel-heading {
-	
 	//         width: 100%;
-	
 	//     }
-	
 	
 	//     .panel-title {
-	
 	//         display: inline-block;
-	
 	//         font-size: 1em;
-	
 	//         vertical-align: middle;
-	
 	//     }
-	
 	
 	//     .panel-title * {
-	
 	//         margin: 0px;
-	
 	//     }
-	
 	
 	//     .header-wrapper {
-	
 	//         display: inline-block;
-	
 	//         width: 72%;
-	
 	//     }
-	
 	
 	//     .button-wrapper {
-	
 	//         float: right;
-	
 	//         display: inline-block;
-	
 	//         width: 28%;
-	
 	//     }
-	
 	
 	//     .accordion-toggle {
-	
 	//         cursor: pointer;
-	
 	//     }
-	
 	
 	//     .expandable-panel {
-	
 	//         margin-bottom: 0 !important;
-	
 	//         margin-top: 5px;
-	
 	//     }
-	
 	
 	//     .panel-group > .panel-container > .expandable-panel {
-	
 	//         margin-top: 0!important;
-	
 	//     }
-	
 	
 	//     .panel-seamless {
-	
 	//         padding: 0;
-	
 	//     }
-	
 	
 	//     .caret.caret-collapse {
-	
 	//         border-left: 4px dashed;
-	
 	//         border-top: 4px solid transparent;
-	
 	//         border-bottom: 4px solid transparent;
-	
 	//         border-right: none;
-	
 	//     }
-	
 	
 	//     .panel.panel-seamless {
-	
 	//         box-shadow: none;
-	
 	//         border: none;
-	
 	//     }
-	
 	
 	//     .panel-seamless > .panel-heading {
-	
 	//         padding: 0;
-	
 	//     }
-	
 	
 	//     .panel-seamless > .panel-collapse > .panel-body {
-	
 	//         padding: 10px 0;
-	
 	//     }
-	
 	
 	//     .panel-body > .collapse-button {
-	
 	//         margin-top: 5px;
-	
 	//         opacity: 0.2;
-	
 	//     }
-	
 	
 	//     .panel-body > .collapse-button:hover {
-	
 	//         opacity: 1;
-	
 	//     }
-	
 	
 	//     .close-button {
-	
 	//         font-size: 10px !important;
-	
 	//         float: right;
-	
 	//         padding: 3px 8px !important;
-	
 	//     }
-	
 	
 	//     .morph {
-	
 	//         display: inline-block;
-	
 	//     }
-	
 	// </style>
 
 /***/ }),
@@ -24041,7 +23551,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, ".dimmed {\r\n    color: #777;\r\n}\r\n", ""]);
+	exports.push([module.id, ".dimmed {\n    color: #777;\n}\n", ""]);
 	
 	// exports
 
@@ -27731,8 +27241,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-8663a104&file=PanelSwitch.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./PanelSwitch.vue", function() {
-				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-8663a104&file=PanelSwitch.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./PanelSwitch.vue");
+			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-2125967e&file=PanelSwitch.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./PanelSwitch.vue", function() {
+				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-2125967e&file=PanelSwitch.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./PanelSwitch.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -27750,7 +27260,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, ".collapse-button {\r\n        font-size: 10px !important;\r\n        float: right;\r\n        padding: 3px 8px !important;\r\n        margin-left: 3px;\r\n    }", ""]);
+	exports.push([module.id, ".collapse-button {\n        font-size: 10px !important;\n        float: right;\n        padding: 3px 8px !important;\n        margin-left: 3px;\n    }", ""]);
 	
 	// exports
 
@@ -27789,34 +27299,20 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 	// </script>
 	
-	
 	// <style>
-	
 	//     .collapse-button {
-	
 	//         font-size: 10px !important;
-	
 	//         float: right;
-	
 	//         padding: 3px 8px !important;
-	
 	//         margin-left: 3px;
-	
 	//     }
-	
 	// </style>
 	// <template>
-	
 	//     <button type="button" class="collapse-button btn btn-default">
-	
 	//         <span :class="['glyphicon', {'glyphicon-menu-down': !isOpen, 'glyphicon-menu-up': isOpen}]"
-	
 	//               aria-hidden="true"></span>
-	
 	//     </button>
-	
 	// </template>
-	
 	
 	// <script>
 
@@ -27824,19 +27320,19 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 246 */
 /***/ (function(module, exports) {
 
-	module.exports = "<button type=\"button\" class=\"collapse-button btn btn-default\">\r\n        <span :class=\"['glyphicon', {'glyphicon-menu-down': !isOpen, 'glyphicon-menu-up': isOpen}]\"\r\n              aria-hidden=\"true\"></span>\r\n    </button>";
+	module.exports = "<button type=\"button\" class=\"collapse-button btn btn-default\">\n        <span :class=\"['glyphicon', {'glyphicon-menu-down': !isOpen, 'glyphicon-menu-up': isOpen}]\"\n              aria-hidden=\"true\"></span>\n    </button>";
 
 /***/ }),
 /* 247 */
 /***/ (function(module, exports) {
 
-	module.exports = "<span class=\"panel-container\">\r\n        <div class=\"morph\" v-show=\"minimized\">\r\n            <div class=\"morph-display-wrapper\" v-on:click=\"open()\">\r\n                <button class=\"morph-display-button btn btn-default\">\r\n                    <template v-if=\"altContent\">\r\n                        <div class=\"panel-title\">{{{altContent}}}</div>\r\n                    </template>\r\n                    <template v-else>\r\n                        <slot name=\"header\">\r\n                            <div class=\"panel-title\">{{{altContent}}}</div>\r\n                        </slot>\r\n                    </template>\r\n                </button>\r\n            </div>\r\n        </div>\r\n\r\n        <div :class=\"['panel', panelType, {'expandable-panel': isExpandablePanel}]\" v-else>\r\n            <div :class=\"['panel-heading',{'accordion-toggle':canCollapse}]\"\r\n                 @click.prevent.stop=\"canCollapse && toggle()\"\r\n                 @mouseover=\"onHeaderHover = true\" @mouseleave=\"onHeaderHover = false\">\r\n                <div class=\"header-wrapper\">\r\n                    <span :class=\"['caret', {'caret-collapse': !expanded}]\" v-show=\"showCaret\"></span>\r\n                    <slot name=\"header\">\r\n                        <div class=\"panel-title\">{{{headerContent}}}</div>\r\n                    </slot>\r\n                </div>\r\n                <div class=\"button-wrapper\">\r\n                    <slot name=\"button\">\r\n                        <panel-switch v-show=\"canCollapse && !noSwitch && !showCaret\" v-bind:is-open=\"expanded\"\r\n                                      @click.stop.prevent=\"expand()\"></panel-switch>\r\n                        <button type=\"button\" class=\"close-button btn btn-default\"\r\n                                v-show=\"this.type !== 'seamless' ? (!noClose) : onHeaderHover\"\r\n                                @click.stop=\"close()\">\r\n                            <span class=\"glyphicon glyphicon-remove\" aria-hidden=\"true\"></span>\r\n                        </button>\r\n                    </slot>\r\n                </div>\r\n            </div>\r\n            <div class=\"panel-collapse\"\r\n                 v-el:panel\r\n                 v-show=\"expanded\"\r\n            >\r\n                <div class=\"panel-body\">\r\n                    <slot></slot>\r\n                    <retriever v-if=\"isDynamic\" v-ref:retriever :src=\"src\" :fragment=\"fragment\" delay></retriever>\r\n                    <panel-switch v-show=\"canCollapse && bottomSwitch\" v-bind:is-open=\"expanded\"\r\n                                  @click.stop.prevent=\"collapseThenScrollIntoViewIfNeeded()\"></panel-switch>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </span>";
+	module.exports = "<span class=\"panel-container\">\n        <div class=\"morph\" v-show=\"minimized\">\n            <div class=\"morph-display-wrapper\" v-on:click=\"open()\">\n                <button class=\"morph-display-button btn btn-default\">\n                    <template v-if=\"altContent\">\n                        <div class=\"panel-title\">{{{altContent}}}</div>\n                    </template>\n                    <template v-else>\n                        <slot name=\"header\">\n                            <div class=\"panel-title\">{{{altContent}}}</div>\n                        </slot>\n                    </template>\n                </button>\n            </div>\n        </div>\n\n        <div :class=\"['panel', panelType, {'expandable-panel': isExpandablePanel}]\" v-else>\n            <div :class=\"['panel-heading',{'accordion-toggle':canCollapse}]\"\n                 @click.prevent.stop=\"canCollapse && toggle()\"\n                 @mouseover=\"onHeaderHover = true\" @mouseleave=\"onHeaderHover = false\">\n                <div class=\"header-wrapper\">\n                    <span :class=\"['caret', {'caret-collapse': !expanded}]\" v-show=\"showCaret\"></span>\n                    <slot name=\"header\">\n                        <div class=\"panel-title\">{{{headerContent}}}</div>\n                    </slot>\n                </div>\n                <div class=\"button-wrapper\">\n                    <slot name=\"button\">\n                        <panel-switch v-show=\"canCollapse && !noSwitch && !showCaret\" v-bind:is-open=\"expanded\"\n                                      @click.stop.prevent=\"expand()\"></panel-switch>\n                        <button type=\"button\" class=\"close-button btn btn-default\"\n                                v-show=\"this.type !== 'seamless' ? (!noClose) : onHeaderHover\"\n                                @click.stop=\"close()\">\n                            <span class=\"glyphicon glyphicon-remove\" aria-hidden=\"true\"></span>\n                        </button>\n                    </slot>\n                </div>\n            </div>\n            <div class=\"panel-collapse\"\n                 v-el:panel\n                 v-show=\"expanded\"\n            >\n                <div class=\"panel-body\">\n                    <slot></slot>\n                    <retriever v-if=\"isDynamic\" v-ref:retriever :src=\"src\" :fragment=\"fragment\" delay></retriever>\n                    <panel-switch v-show=\"canCollapse && bottomSwitch\" v-bind:is-open=\"expanded\"\n                                  @click.stop.prevent=\"collapseThenScrollIntoViewIfNeeded()\"></panel-switch>\n                </div>\n            </div>\n        </div>\n    </span>";
 
 /***/ }),
 /* 248 */
 /***/ (function(module, exports) {
 
-	module.exports = "<panel :header=\"header\" :is-open=\"isOpen\" :type=\"type\" expandable no-switch>\r\n    <slot name=\"button\" slot=\"button\"></slot>\r\n    <retriever v-ref:retriever :src=\"src\" :fragment=\"fragment\" delay></retriever>\r\n  </panel>";
+	module.exports = "<panel :header=\"header\" :is-open=\"isOpen\" :type=\"type\" expandable no-switch>\n    <slot name=\"button\" slot=\"button\"></slot>\n    <retriever v-ref:retriever :src=\"src\" :fragment=\"fragment\" delay></retriever>\n  </panel>";
 
 /***/ }),
 /* 249 */
@@ -27854,10 +27350,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	if (!hotAPI.compatible) return
 	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Input.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Input.vue","-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-5e5e3320&file=Input.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Input.vue"], function () {
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Input.vue","-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-eefce520&file=Input.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Input.vue"], function () {
 	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Input.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-5e5e3320&file=Input.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Input.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-eefce520&file=Input.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Input.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -27879,8 +27375,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-5e5e3320&file=Input.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Input.vue", function() {
-				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-5e5e3320&file=Input.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Input.vue");
+			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-eefce520&file=Input.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Input.vue", function() {
+				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-eefce520&file=Input.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Input.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -27898,7 +27394,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, ".form-group[_v-5e5e3320] {\r\n  position: relative;\r\n}\r\nlabel~.close[_v-5e5e3320] {\r\n  top: 25px;\r\n}\r\n.input-group>.icon[_v-5e5e3320] {\r\n  position: relative;\r\n  display: table-cell;\r\n  width:0;\r\n  z-index: 3;\r\n}\r\n.close[_v-5e5e3320] {\r\n  position: absolute;\r\n  top: 0;\r\n  right: 0;\r\n  z-index: 2;\r\n  display: block;\r\n  width: 34px;\r\n  height: 34px;\r\n  line-height: 34px;\r\n  text-align: center;\r\n}\r\n.has-feedback .close[_v-5e5e3320] {\r\n  right: 20px;\r\n}", ""]);
+	exports.push([module.id, ".form-group[_v-eefce520] {\n  position: relative;\n}\nlabel~.close[_v-eefce520] {\n  top: 25px;\n}\n.input-group>.icon[_v-eefce520] {\n  position: relative;\n  display: table-cell;\n  width:0;\n  z-index: 3;\n}\n.close[_v-eefce520] {\n  position: absolute;\n  top: 0;\n  right: 0;\n  z-index: 2;\n  display: block;\n  width: 34px;\n  height: 34px;\n  line-height: 34px;\n  text-align: center;\n}\n.has-feedback .close[_v-eefce520] {\n  right: 20px;\n}", ""]);
 	
 	// exports
 
@@ -27922,155 +27418,80 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	//   <div class="form-group" :class="{validate:canValidate,'has-feedback':icon,'has-error':canValidate&&valid===false,'has-success':canValidate&&valid}">
-	
 	//     <slot name="label"><label v-if="label" class="control-label" @click="focus">{{label}}</label></slot>
-	
 	//     <div v-if="slots.before||slots.after" class="input-group">
-	
 	//       <slot name="before"></slot>
-	
 	//       <textarea v-if="type=='textarea'" class="form-control" v-el:input v-model="value"
-	
 	//         :cols="cols"
-	
 	//         :rows="rows"
-	
 	//         :name="name"
-	
 	//         :title="attr(title)"
-	
 	//         :readonly="readonly"
-	
 	//         :required="required"
-	
 	//         :disabled="disabled"
-	
 	//         :maxlength="maxlength"
-	
 	//         :placeholder="placeholder"
-	
 	//         @blur="onblur" @focus="onfocus"
-	
 	//       ></textarea>
-	
 	//       <input v-else class="form-control" v-el:input v-model="value"
-	
 	//         :name="name"
-	
 	//         :max="attr(max)"
-	
 	//         :min="attr(min)"
-	
 	//         :step="step"
-	
 	//         :type="type"
-	
 	//         :title="attr(title)"
-	
 	//         :readonly="readonly"
-	
 	//         :required="required"
-	
 	//         :disabled="disabled"
-	
 	//         :maxlength="maxlength"
-	
 	//         :placeholder="placeholder"
-	
 	//         @keyup.enter="enterSubmit&&submit()"
-	
 	//         @blur="onblur" @focus="onfocus"
-	
 	//       />
-	
 	//       <div v-if="showClear && value" :class="{icon:icon}">
-	
 	//         <span class="close" @click="value = ''">&times;</span>
-	
 	//       </div>
-	
 	//       <div v-if="icon" class="icon">
-	
 	//         <span v-if="icon&&valid!==null" :class="['form-control-feedback glyphicon','glyphicon-'+(valid?'ok':'remove')]" aria-hidden="true"></span>
-	
 	//       </div>
-	
 	//       <slot name="after"></slot>
-	
 	//     </div>
-	
 	//     <template v-else>
-	
 	//       <textarea v-if="type=='textarea'" class="form-control" v-el:input v-model="value"
-	
 	//         :cols="cols"
-	
 	//         :rows="rows"
-	
 	//         :name="name"
-	
 	//         :title="attr(title)"
-	
 	//         :readonly="readonly"
-	
 	//         :required="required"
-	
 	//         :disabled="disabled"
-	
 	//         :maxlength="maxlength"
-	
 	//         :placeholder="placeholder"
-	
 	//         @blur="onblur" @focus="onfocus"
-	
 	//       ></textarea>
-	
 	//       <input v-else class="form-control" v-el:input v-model="value"
-	
 	//         :name="name"
-	
 	//         :max="attr(max)"
-	
 	//         :min="attr(min)"
-	
 	//         :step="step"
-	
 	//         :type="type"
-	
 	//         :title="attr(title)"
-	
 	//         :readonly="readonly"
-	
 	//         :required="required"
-	
 	//         :disabled="disabled"
-	
 	//         :maxlength="maxlength"
-	
 	//         :placeholder="placeholder"
-	
 	//         @keyup.enter="enterSubmit&&submit()"
-	
 	//         @blur="onblur" @focus="onfocus"
-	
 	//       />
-	
 	//       <span v-if="showClear && value" class="close" @click="value = ''">&times;</span>
-	
 	//       <span v-if="icon&&valid!==null" :class="['form-control-feedback glyphicon','glyphicon-'+(valid?'ok':'remove')]" aria-hidden="true"></span>
-	
 	//     </template>
-	
 	//     <div v-if="showHelp" class="help-block" @click="focus">{{help}}</div>
-	
 	//     <div v-if="showError" class="help-block with-errors" @click="focus">{{errorText}}</div>
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -28360,68 +27781,40 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 	// </script>
 	
-	
 	// <style scoped>
-	
 	// .form-group {
-	
 	//   position: relative;
-	
 	// }
-	
 	// label~.close {
-	
 	//   top: 25px;
-	
 	// }
-	
 	// .input-group>.icon {
-	
 	//   position: relative;
-	
 	//   display: table-cell;
-	
 	//   width:0;
-	
 	//   z-index: 3;
-	
 	// }
-	
 	// .close {
-	
 	//   position: absolute;
-	
 	//   top: 0;
-	
 	//   right: 0;
-	
 	//   z-index: 2;
-	
 	//   display: block;
-	
 	//   width: 34px;
-	
 	//   height: 34px;
-	
 	//   line-height: 34px;
-	
 	//   text-align: center;
-	
 	// }
-	
 	// .has-feedback .close {
-	
 	//   right: 20px;
-	
 	// }
-	
 	// </style>
 
 /***/ }),
 /* 253 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div class=\"form-group\" :class=\"{validate:canValidate,'has-feedback':icon,'has-error':canValidate&amp;&amp;valid===false,'has-success':canValidate&amp;&amp;valid}\" _v-5e5e3320=\"\">\n    <slot name=\"label\" _v-5e5e3320=\"\"><label v-if=\"label\" class=\"control-label\" @click=\"focus\" _v-5e5e3320=\"\">{{label}}</label></slot>\n    <div v-if=\"slots.before||slots.after\" class=\"input-group\" _v-5e5e3320=\"\">\n      <slot name=\"before\" _v-5e5e3320=\"\"></slot>\n      <textarea v-if=\"type=='textarea'\" class=\"form-control\" v-el:input=\"\" v-model=\"value\" :cols=\"cols\" :rows=\"rows\" :name=\"name\" :title=\"attr(title)\" :readonly=\"readonly\" :required=\"required\" :disabled=\"disabled\" :maxlength=\"maxlength\" :placeholder=\"placeholder\" @blur=\"onblur\" @focus=\"onfocus\" _v-5e5e3320=\"\"></textarea>\n      <input v-else=\"\" class=\"form-control\" v-el:input=\"\" v-model=\"value\" :name=\"name\" :max=\"attr(max)\" :min=\"attr(min)\" :step=\"step\" :type=\"type\" :title=\"attr(title)\" :readonly=\"readonly\" :required=\"required\" :disabled=\"disabled\" :maxlength=\"maxlength\" :placeholder=\"placeholder\" @keyup.enter=\"enterSubmit&amp;&amp;submit()\" @blur=\"onblur\" @focus=\"onfocus\" _v-5e5e3320=\"\">\n      <div v-if=\"showClear &amp;&amp; value\" :class=\"{icon:icon}\" _v-5e5e3320=\"\">\n        <span class=\"close\" @click=\"value = ''\" _v-5e5e3320=\"\">×</span>\n      </div>\n      <div v-if=\"icon\" class=\"icon\" _v-5e5e3320=\"\">\n        <span v-if=\"icon&amp;&amp;valid!==null\" :class=\"['form-control-feedback glyphicon','glyphicon-'+(valid?'ok':'remove')]\" aria-hidden=\"true\" _v-5e5e3320=\"\"></span>\n      </div>\n      <slot name=\"after\" _v-5e5e3320=\"\"></slot>\n    </div>\n    <template v-else=\"\" _v-5e5e3320=\"\">\n      <textarea v-if=\"type=='textarea'\" class=\"form-control\" v-el:input=\"\" v-model=\"value\" :cols=\"cols\" :rows=\"rows\" :name=\"name\" :title=\"attr(title)\" :readonly=\"readonly\" :required=\"required\" :disabled=\"disabled\" :maxlength=\"maxlength\" :placeholder=\"placeholder\" @blur=\"onblur\" @focus=\"onfocus\" _v-5e5e3320=\"\"></textarea>\n      <input v-else=\"\" class=\"form-control\" v-el:input=\"\" v-model=\"value\" :name=\"name\" :max=\"attr(max)\" :min=\"attr(min)\" :step=\"step\" :type=\"type\" :title=\"attr(title)\" :readonly=\"readonly\" :required=\"required\" :disabled=\"disabled\" :maxlength=\"maxlength\" :placeholder=\"placeholder\" @keyup.enter=\"enterSubmit&amp;&amp;submit()\" @blur=\"onblur\" @focus=\"onfocus\" _v-5e5e3320=\"\">\n      <span v-if=\"showClear &amp;&amp; value\" class=\"close\" @click=\"value = ''\" _v-5e5e3320=\"\">×</span>\n      <span v-if=\"icon&amp;&amp;valid!==null\" :class=\"['form-control-feedback glyphicon','glyphicon-'+(valid?'ok':'remove')]\" aria-hidden=\"true\" _v-5e5e3320=\"\"></span>\n    </template>\n    <div v-if=\"showHelp\" class=\"help-block\" @click=\"focus\" _v-5e5e3320=\"\">{{help}}</div>\n    <div v-if=\"showError\" class=\"help-block with-errors\" @click=\"focus\" _v-5e5e3320=\"\">{{errorText}}</div>\n  </div>";
+	module.exports = "<div class=\"form-group\" :class=\"{validate:canValidate,'has-feedback':icon,'has-error':canValidate&amp;&amp;valid===false,'has-success':canValidate&amp;&amp;valid}\" _v-eefce520=\"\">\n    <slot name=\"label\" _v-eefce520=\"\"><label v-if=\"label\" class=\"control-label\" @click=\"focus\" _v-eefce520=\"\">{{label}}</label></slot>\n    <div v-if=\"slots.before||slots.after\" class=\"input-group\" _v-eefce520=\"\">\n      <slot name=\"before\" _v-eefce520=\"\"></slot>\n      <textarea v-if=\"type=='textarea'\" class=\"form-control\" v-el:input=\"\" v-model=\"value\" :cols=\"cols\" :rows=\"rows\" :name=\"name\" :title=\"attr(title)\" :readonly=\"readonly\" :required=\"required\" :disabled=\"disabled\" :maxlength=\"maxlength\" :placeholder=\"placeholder\" @blur=\"onblur\" @focus=\"onfocus\" _v-eefce520=\"\"></textarea>\n      <input v-else=\"\" class=\"form-control\" v-el:input=\"\" v-model=\"value\" :name=\"name\" :max=\"attr(max)\" :min=\"attr(min)\" :step=\"step\" :type=\"type\" :title=\"attr(title)\" :readonly=\"readonly\" :required=\"required\" :disabled=\"disabled\" :maxlength=\"maxlength\" :placeholder=\"placeholder\" @keyup.enter=\"enterSubmit&amp;&amp;submit()\" @blur=\"onblur\" @focus=\"onfocus\" _v-eefce520=\"\">\n      <div v-if=\"showClear &amp;&amp; value\" :class=\"{icon:icon}\" _v-eefce520=\"\">\n        <span class=\"close\" @click=\"value = ''\" _v-eefce520=\"\">×</span>\n      </div>\n      <div v-if=\"icon\" class=\"icon\" _v-eefce520=\"\">\n        <span v-if=\"icon&amp;&amp;valid!==null\" :class=\"['form-control-feedback glyphicon','glyphicon-'+(valid?'ok':'remove')]\" aria-hidden=\"true\" _v-eefce520=\"\"></span>\n      </div>\n      <slot name=\"after\" _v-eefce520=\"\"></slot>\n    </div>\n    <template v-else=\"\" _v-eefce520=\"\">\n      <textarea v-if=\"type=='textarea'\" class=\"form-control\" v-el:input=\"\" v-model=\"value\" :cols=\"cols\" :rows=\"rows\" :name=\"name\" :title=\"attr(title)\" :readonly=\"readonly\" :required=\"required\" :disabled=\"disabled\" :maxlength=\"maxlength\" :placeholder=\"placeholder\" @blur=\"onblur\" @focus=\"onfocus\" _v-eefce520=\"\"></textarea>\n      <input v-else=\"\" class=\"form-control\" v-el:input=\"\" v-model=\"value\" :name=\"name\" :max=\"attr(max)\" :min=\"attr(min)\" :step=\"step\" :type=\"type\" :title=\"attr(title)\" :readonly=\"readonly\" :required=\"required\" :disabled=\"disabled\" :maxlength=\"maxlength\" :placeholder=\"placeholder\" @keyup.enter=\"enterSubmit&amp;&amp;submit()\" @blur=\"onblur\" @focus=\"onfocus\" _v-eefce520=\"\">\n      <span v-if=\"showClear &amp;&amp; value\" class=\"close\" @click=\"value = ''\" _v-eefce520=\"\">×</span>\n      <span v-if=\"icon&amp;&amp;valid!==null\" :class=\"['form-control-feedback glyphicon','glyphicon-'+(valid?'ok':'remove')]\" aria-hidden=\"true\" _v-eefce520=\"\"></span>\n    </template>\n    <div v-if=\"showHelp\" class=\"help-block\" @click=\"focus\" _v-eefce520=\"\">{{help}}</div>\n    <div v-if=\"showError\" class=\"help-block with-errors\" @click=\"focus\" _v-eefce520=\"\">{{errorText}}</div>\n  </div>";
 
 /***/ }),
 /* 254 */
@@ -28464,8 +27857,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-2731405a&file=Modal.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Modal.vue", function() {
-				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-2731405a&file=Modal.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Modal.vue");
+			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-b7cff25a&file=Modal.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Modal.vue", function() {
+				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-b7cff25a&file=Modal.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Modal.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -28483,7 +27876,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, ".modal {\r\n  transition: all 0.3s ease;\r\n}\r\n.modal.in {\r\n  background-color: rgba(0,0,0,0.5);\r\n}\r\n.modal.zoom .modal-dialog {\r\n  -webkit-transform: scale(0.1);\r\n  transform: scale(0.1);\r\n  top: 300px;\r\n  opacity: 0;\r\n  transition: all 0.3s;\r\n}\r\n.modal.zoom.in .modal-dialog {\r\n  -webkit-transform: scale(1);\r\n  transform: scale(1);\r\n  -webkit-transform: translate3d(0, -300px, 0);\r\n  transform: translate3d(0, -300px, 0);\r\n  opacity: 1;\r\n}", ""]);
+	exports.push([module.id, ".modal {\n  transition: all 0.3s ease;\n}\n.modal.in {\n  background-color: rgba(0,0,0,0.5);\n}\n.modal.zoom .modal-dialog {\n  -webkit-transform: scale(0.1);\n  transform: scale(0.1);\n  top: 300px;\n  opacity: 0;\n  transition: all 0.3s;\n}\n.modal.zoom.in .modal-dialog {\n  -webkit-transform: scale(1);\n  transform: scale(1);\n  -webkit-transform: translate3d(0, -300px, 0);\n  transform: translate3d(0, -300px, 0);\n  opacity: 1;\n}", ""]);
 	
 	// exports
 
@@ -28628,127 +28021,67 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	  }
 	  // </script>
-	
 	  // <style>
-	
 	  // .modal {
-	
 	  //   transition: all 0.3s ease;
-	
 	  // }
-	
 	  // .modal.in {
-	
 	  //   background-color: rgba(0,0,0,0.5);
-	
 	  // }
-	
 	  // .modal.zoom .modal-dialog {
-	
 	  //   -webkit-transform: scale(0.1);
-	
 	  //   -moz-transform: scale(0.1);
-	
 	  //   -ms-transform: scale(0.1);
-	
 	  //   transform: scale(0.1);
-	
 	  //   top: 300px;
-	
 	  //   opacity: 0;
-	
 	  //   -webkit-transition: all 0.3s;
-	
 	  //   -moz-transition: all 0.3s;
-	
 	  //   transition: all 0.3s;
-	
 	  // }
-	
 	  // .modal.zoom.in .modal-dialog {
-	
 	  //   -webkit-transform: scale(1);
-	
 	  //   -moz-transform: scale(1);
-	
 	  //   -ms-transform: scale(1);
-	
 	  //   transform: scale(1);
-	
 	  //   -webkit-transform: translate3d(0, -300px, 0);
-	
 	  //   transform: translate3d(0, -300px, 0);
-	
 	  //   opacity: 1;
-	
 	  // }
-	
 	  // </style>
 	
 	}; // <template>
-	
 	//   <div role="dialog"
-	
 	//     v-bind:class="{
-	
 	//     'modal':true,
-	
 	//     'fade':effect === 'fade',
-	
 	//     'zoom':effect === 'zoom'
-	
 	//     }">
-	
 	//     <div v-bind:class="{'modal-dialog':true,'modal-lg':large,'modal-sm':small}" role="document"
-	
 	//       v-bind:style="{width: optionalWidth}">
-	
 	//       <div class="modal-content">
-	
 	//         <slot name="modal-header">
-	
 	//           <div class="modal-header">
-	
 	//             <button type="button" class="close" @click="close"><span>&times;</span></button>
-	
 	//             <h4 class="modal-title">
-	
 	//               <slot name="title">
-	
 	//                 {{{titleRendered}}}
-	
 	//               </slot>
-	
 	//             </h4>
-	
 	//           </div>
-	
 	//         </slot>
-	
 	//           <div class="modal-body">
-	
 	//               <slot></slot>
-	
 	//           </div>
-	
 	//         <slot name="modal-footer">
-	
 	//           <div class="modal-footer" v-if="showOkButton">
-	
 	//             <button type="button" class="btn btn-primary" v-if="showOkButton" @click="close">{{ okText }}</button>
-	
 	//           </div>
-	
 	//         </slot>
-	
 	//       </div>
-	
 	//     </div>
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script>
 
@@ -28792,7 +28125,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 262 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div role=\"dialog\"\r\n    v-bind:class=\"{\r\n    'modal':true,\r\n    'fade':effect === 'fade',\r\n    'zoom':effect === 'zoom'\r\n    }\">\r\n    <div v-bind:class=\"{'modal-dialog':true,'modal-lg':large,'modal-sm':small}\" role=\"document\"\r\n      v-bind:style=\"{width: optionalWidth}\">\r\n      <div class=\"modal-content\">\r\n        <slot name=\"modal-header\">\r\n          <div class=\"modal-header\">\r\n            <button type=\"button\" class=\"close\" @click=\"close\"><span>&times;</span></button>\r\n            <h4 class=\"modal-title\">\r\n              <slot name=\"title\">\r\n                {{{titleRendered}}}\r\n              </slot>\r\n            </h4>\r\n          </div>\r\n        </slot>\r\n          <div class=\"modal-body\">\r\n              <slot></slot>\r\n          </div>\r\n        <slot name=\"modal-footer\">\r\n          <div class=\"modal-footer\" v-if=\"showOkButton\">\r\n            <button type=\"button\" class=\"btn btn-primary\" v-if=\"showOkButton\" @click=\"close\">{{ okText }}</button>\r\n          </div>\r\n        </slot>\r\n      </div>\r\n    </div>\r\n  </div>";
+	module.exports = "<div role=\"dialog\"\n    v-bind:class=\"{\n    'modal':true,\n    'fade':effect === 'fade',\n    'zoom':effect === 'zoom'\n    }\">\n    <div v-bind:class=\"{'modal-dialog':true,'modal-lg':large,'modal-sm':small}\" role=\"document\"\n      v-bind:style=\"{width: optionalWidth}\">\n      <div class=\"modal-content\">\n        <slot name=\"modal-header\">\n          <div class=\"modal-header\">\n            <button type=\"button\" class=\"close\" @click=\"close\"><span>&times;</span></button>\n            <h4 class=\"modal-title\">\n              <slot name=\"title\">\n                {{{titleRendered}}}\n              </slot>\n            </h4>\n          </div>\n        </slot>\n          <div class=\"modal-body\">\n              <slot></slot>\n          </div>\n        <slot name=\"modal-footer\">\n          <div class=\"modal-footer\" v-if=\"showOkButton\">\n            <button type=\"button\" class=\"btn btn-primary\" v-if=\"showOkButton\" @click=\"close\">{{ okText }}</button>\n          </div>\n        </slot>\n      </div>\n    </div>\n  </div>";
 
 /***/ }),
 /* 263 */
@@ -28835,8 +28168,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-2b421ea4&file=Morph.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Morph.vue", function() {
-				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-2b421ea4&file=Morph.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Morph.vue");
+			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-bbe0d0a4&file=Morph.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Morph.vue", function() {
+				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-bbe0d0a4&file=Morph.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Morph.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -28854,7 +28187,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, ".morph {\r\n        display: inline-block;\r\n    }\r\n\r\n    .morph-expanded {\r\n        display: block;\r\n        margin-top: 10px;\r\n    }\r\n\r\n    .morph-details > .expandable-panel {\r\n        margin-bottom: 20px!important;\r\n    }\r\n\r\n    .close-button {\r\n        font-size: 10px !important;\r\n        float: right;\r\n        padding: 3px 8px !important;\r\n    }", ""]);
+	exports.push([module.id, ".morph {\n        display: inline-block;\n    }\n\n    .morph-expanded {\n        display: block;\n        margin-top: 10px;\n    }\n\n    .morph-details > .expandable-panel {\n        margin-bottom: 20px!important;\n    }\n\n    .close-button {\n        font-size: 10px !important;\n        float: right;\n        padding: 3px 8px !important;\n    }", ""]);
 	
 	// exports
 
@@ -28886,58 +28219,32 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	//     <div :class="['morph', {'morph-expanded': isOpen}]">
-	
 	//         <div class="morph-display-wrapper"
-	
 	//              @click.prevent="expand()"
-	
 	//              v-show="!isOpen">
-	
 	//             <slot name="display">
-	
 	//                 <button class="morph-display-button btn btn-default">{{{titleContent}}}</button>
-	
 	//             </slot>
-	
 	//         </div>
-	
 	
 	//         <div class="morph-details"
-	
 	//              v-el:details
-	
 	//              v-show="isOpen">
-	
 	//             <dynamic-panel :header="title" :src="src" :is-open="isOpen" v-if="isDynamic">
-	
 	//                 <button type="button" class="close-button btn btn-default" slot="button" @click.stop="close()">
-	
 	//                     <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
-	
 	//                 </button>
-	
 	//             </dynamic-panel>
-	
 	//             <Panel :header="title" v-else>
-	
 	//                 <button type="button" class="close-button btn btn-default" slot="button" @click.stop="close()">
-	
 	//                     <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
-	
 	//                 </button>
-	
 	//                 <slot></slot>
-	
 	//             </Panel>
-	
 	//         </div>
-	
 	//     </div>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -28978,49 +28285,32 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 	// </script>
 	
-	
 	// <style>
-	
 	//     .morph {
-	
 	//         display: inline-block;
-	
 	//     }
-	
 	
 	//     .morph-expanded {
-	
 	//         display: block;
-	
 	//         margin-top: 10px;
-	
 	//     }
-	
 	
 	//     .morph-details > .expandable-panel {
-	
 	//         margin-bottom: 20px!important;
-	
 	//     }
-	
 	
 	//     .close-button {
-	
 	//         font-size: 10px !important;
-	
 	//         float: right;
-	
 	//         padding: 3px 8px !important;
-	
 	//     }
-	
 	// </style>
 
 /***/ }),
 /* 267 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div :class=\"['morph', {'morph-expanded': isOpen}]\">\r\n        <div class=\"morph-display-wrapper\"\r\n             @click.prevent=\"expand()\"\r\n             v-show=\"!isOpen\">\r\n            <slot name=\"display\">\r\n                <button class=\"morph-display-button btn btn-default\">{{{titleContent}}}</button>\r\n            </slot>\r\n        </div>\r\n\r\n        <div class=\"morph-details\"\r\n             v-el:details\r\n             v-show=\"isOpen\">\r\n            <dynamic-panel :header=\"title\" :src=\"src\" :is-open=\"isOpen\" v-if=\"isDynamic\">\r\n                <button type=\"button\" class=\"close-button btn btn-default\" slot=\"button\" @click.stop=\"close()\">\r\n                    <span class=\"glyphicon glyphicon-remove\" aria-hidden=\"true\"></span>\r\n                </button>\r\n            </dynamic-panel>\r\n            <Panel :header=\"title\" v-else>\r\n                <button type=\"button\" class=\"close-button btn btn-default\" slot=\"button\" @click.stop=\"close()\">\r\n                    <span class=\"glyphicon glyphicon-remove\" aria-hidden=\"true\"></span>\r\n                </button>\r\n                <slot></slot>\r\n            </Panel>\r\n        </div>\r\n    </div>";
+	module.exports = "<div :class=\"['morph', {'morph-expanded': isOpen}]\">\n        <div class=\"morph-display-wrapper\"\n             @click.prevent=\"expand()\"\n             v-show=\"!isOpen\">\n            <slot name=\"display\">\n                <button class=\"morph-display-button btn btn-default\">{{{titleContent}}}</button>\n            </slot>\n        </div>\n\n        <div class=\"morph-details\"\n             v-el:details\n             v-show=\"isOpen\">\n            <dynamic-panel :header=\"title\" :src=\"src\" :is-open=\"isOpen\" v-if=\"isDynamic\">\n                <button type=\"button\" class=\"close-button btn btn-default\" slot=\"button\" @click.stop=\"close()\">\n                    <span class=\"glyphicon glyphicon-remove\" aria-hidden=\"true\"></span>\n                </button>\n            </dynamic-panel>\n            <Panel :header=\"title\" v-else>\n                <button type=\"button\" class=\"close-button btn btn-default\" slot=\"button\" @click.stop=\"close()\">\n                    <span class=\"glyphicon glyphicon-remove\" aria-hidden=\"true\"></span>\n                </button>\n                <slot></slot>\n            </Panel>\n        </div>\n    </div>";
 
 /***/ }),
 /* 268 */
@@ -29038,10 +28328,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	if (!hotAPI.compatible) return
 	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Navbar.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Navbar.vue","-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-26b8d14c&file=Navbar.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Navbar.vue"], function () {
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Navbar.vue","-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-2b07d05a&file=Navbar.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Navbar.vue"], function () {
 	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Navbar.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-26b8d14c&file=Navbar.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Navbar.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-2b07d05a&file=Navbar.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Navbar.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -29063,8 +28353,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-26b8d14c&file=Navbar.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Navbar.vue", function() {
-				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-26b8d14c&file=Navbar.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Navbar.vue");
+			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-2b07d05a&file=Navbar.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Navbar.vue", function() {
+				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-2b07d05a&file=Navbar.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Navbar.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -29082,7 +28372,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, "@media (max-width: 767px) {\r\n  .navbar-fixed-top .navbar-collapse[_v-26b8d14c] {\r\n    max-height: 80vh !important;\r\n    overflow-x: hidden !important;\r\n    overflow-y: scroll !important;\r\n  }\r\n}", ""]);
+	exports.push([module.id, "@media (max-width: 767px) {\n  .navbar-fixed-top .navbar-collapse[_v-2b07d05a] {\n    max-height: 80vh !important;\n    overflow-x: hidden !important;\n    overflow-y: scroll !important;\n  }\n}", ""]);
 	
 	// exports
 
@@ -29184,84 +28474,45 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 	// </script>
 	
-	
 	// <style scoped>
-	
 	// @media (max-width: 767px) {
-	
 	//   .navbar-fixed-top .navbar-collapse {
-	
 	//     max-height: 80vh !important;
-	
 	//     overflow-x: hidden !important;
-	
 	//     overflow-y: scroll !important;
-	
 	//   }
-	
 	// }
-	
 	// </style>
 	// <template>
-	
 	//   <nav v-el:navbar :class="['navbar',{
-	
 	//     'navbar-inverse':(type == 'inverse'),
-	
 	//     'navbar-default':(type == 'default'),
-	
 	//     'navbar-fixed-top':(placement === 'top'),
-	
 	//     'navbar-fixed-bottom':(placement === 'bottom'),
-	
 	//     'navbar-static-top':(placement === 'static')
-	
 	//   }]">
-	
 	//     <div class="container-fluid">
-	
 	//       <div class="navbar-header">
-	
 	//         <button v-if="!slots.collapse" type="button" class="navbar-toggle collapsed"  aria-expanded="false" @click="toggleCollapse">
-	
 	//           <span class="sr-only">Toggle navigation</span>
-	
 	//           <span class="icon-bar"></span>
-	
 	//           <span class="icon-bar"></span>
-	
 	//           <span class="icon-bar"></span>
-	
 	//         </button>
-	
 	//         <slot name="collapse"></slot>
-	
 	//         <slot name="brand"></slot>
-	
 	//       </div>
-	
 	//       <div :class="['navbar-collapse',{collapse:collapsed}]">
-	
 	//         <ul class="nav navbar-nav">
-	
 	//           <slot></slot>
-	
 	//         </ul>
-	
 	//         <ul v-if="slots.right" class="nav navbar-nav navbar-right">
-	
 	//           <slot name="right"></slot>
-	
 	//         </ul>
-	
 	//       </div>
-	
 	//     </div>
-	
 	//   </nav>
-	
 	// </template>
-	
 	
 	// <script>
 
@@ -29269,7 +28520,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 272 */
 /***/ (function(module, exports) {
 
-	module.exports = "<nav v-el:navbar=\"\" :class=\"['navbar',{\n    'navbar-inverse':(type == 'inverse'),\n    'navbar-default':(type == 'default'),\n    'navbar-fixed-top':(placement === 'top'),\n    'navbar-fixed-bottom':(placement === 'bottom'),\n    'navbar-static-top':(placement === 'static')\n  }]\" _v-26b8d14c=\"\">\n    <div class=\"container-fluid\" _v-26b8d14c=\"\">\n      <div class=\"navbar-header\" _v-26b8d14c=\"\">\n        <button v-if=\"!slots.collapse\" type=\"button\" class=\"navbar-toggle collapsed\" aria-expanded=\"false\" @click=\"toggleCollapse\" _v-26b8d14c=\"\">\n          <span class=\"sr-only\" _v-26b8d14c=\"\">Toggle navigation</span>\n          <span class=\"icon-bar\" _v-26b8d14c=\"\"></span>\n          <span class=\"icon-bar\" _v-26b8d14c=\"\"></span>\n          <span class=\"icon-bar\" _v-26b8d14c=\"\"></span>\n        </button>\n        <slot name=\"collapse\" _v-26b8d14c=\"\"></slot>\n        <slot name=\"brand\" _v-26b8d14c=\"\"></slot>\n      </div>\n      <div :class=\"['navbar-collapse',{collapse:collapsed}]\" _v-26b8d14c=\"\">\n        <ul class=\"nav navbar-nav\" _v-26b8d14c=\"\">\n          <slot _v-26b8d14c=\"\"></slot>\n        </ul>\n        <ul v-if=\"slots.right\" class=\"nav navbar-nav navbar-right\" _v-26b8d14c=\"\">\n          <slot name=\"right\" _v-26b8d14c=\"\"></slot>\n        </ul>\n      </div>\n    </div>\n  </nav>";
+	module.exports = "<nav v-el:navbar=\"\" :class=\"['navbar',{\n    'navbar-inverse':(type == 'inverse'),\n    'navbar-default':(type == 'default'),\n    'navbar-fixed-top':(placement === 'top'),\n    'navbar-fixed-bottom':(placement === 'bottom'),\n    'navbar-static-top':(placement === 'static')\n  }]\" _v-2b07d05a=\"\">\n    <div class=\"container-fluid\" _v-2b07d05a=\"\">\n      <div class=\"navbar-header\" _v-2b07d05a=\"\">\n        <button v-if=\"!slots.collapse\" type=\"button\" class=\"navbar-toggle collapsed\" aria-expanded=\"false\" @click=\"toggleCollapse\" _v-2b07d05a=\"\">\n          <span class=\"sr-only\" _v-2b07d05a=\"\">Toggle navigation</span>\n          <span class=\"icon-bar\" _v-2b07d05a=\"\"></span>\n          <span class=\"icon-bar\" _v-2b07d05a=\"\"></span>\n          <span class=\"icon-bar\" _v-2b07d05a=\"\"></span>\n        </button>\n        <slot name=\"collapse\" _v-2b07d05a=\"\"></slot>\n        <slot name=\"brand\" _v-2b07d05a=\"\"></slot>\n      </div>\n      <div :class=\"['navbar-collapse',{collapse:collapsed}]\" _v-2b07d05a=\"\">\n        <ul class=\"nav navbar-nav\" _v-2b07d05a=\"\">\n          <slot _v-2b07d05a=\"\"></slot>\n        </ul>\n        <ul v-if=\"slots.right\" class=\"nav navbar-nav navbar-right\" _v-2b07d05a=\"\">\n          <slot name=\"right\" _v-2b07d05a=\"\"></slot>\n        </ul>\n      </div>\n    </div>\n  </nav>";
 
 /***/ }),
 /* 273 */
@@ -29312,8 +28563,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-1a9d10a0&file=Question.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Question.vue", function() {
-				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-1a9d10a0&file=Question.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Question.vue");
+			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-28eb70b0&file=Question.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Question.vue", function() {
+				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-28eb70b0&file=Question.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Question.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -29331,7 +28582,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, ".body-wrapper {\r\n        padding-bottom: 10px;\r\n    }\r\n    .textarea-container {\r\n        margin: 8px 0;\r\n    }\r\n    .textarea-container > textarea {\r\n        margin: 4px 0;\r\n    }", ""]);
+	exports.push([module.id, ".body-wrapper {\n        padding-bottom: 10px;\n    }\n    .textarea-container {\n        margin: 8px 0;\n    }\n    .textarea-container > textarea {\n        margin: 4px 0;\n    }", ""]);
 	
 	// exports
 
@@ -29363,51 +28614,28 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	//     <div class="question-wrapper">
-	
 	//         <div class="body-wrapper">
-	
 	//             <!-- Default slot is question body -->
-	
 	//             <slot></slot>
-	
 	//             <div v-if="hasInput" class="textarea-container">
-	
 	//                 <textarea class="form-control question-input" rows="3" placeholder="write your answer here..."></textarea>
-	
 	//             </div>
-	
 	//         </div>
-	
 	//         <accordion>
-	
 	//             <div v-show="hasHintSlot">
-	
 	//                 <panel header="Hint" expandable no-close>
-	
 	//                     <slot name="hint">
-	
 	//                         No hint is available for this question.
-	
 	//                     </slot>
-	
 	//                 </panel>
-	
 	//             </div>
-	
 	//             <panel v-show="hasAnswerSlot" header="Answer" expandable no-close>
-	
 	//                 <slot name="answer"></slot>
-	
 	//             </panel>
-	
 	//         </accordion>
-	
 	//     </div>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -29438,34 +28666,23 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 	// </script>
 	
-	
 	// <style>
-	
 	//     .body-wrapper {
-	
 	//         padding-bottom: 10px;
-	
 	//     }
-	
 	//     .textarea-container {
-	
 	//         margin: 8px 0;
-	
 	//     }
-	
 	//     .textarea-container > textarea {
-	
 	//         margin: 4px 0;
-	
 	//     }
-	
 	// </style>
 
 /***/ }),
 /* 277 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div class=\"question-wrapper\">\r\n        <div class=\"body-wrapper\">\r\n            <!-- Default slot is question body -->\r\n            <slot></slot>\r\n            <div v-if=\"hasInput\" class=\"textarea-container\">\r\n                <textarea class=\"form-control question-input\" rows=\"3\" placeholder=\"write your answer here...\"></textarea>\r\n            </div>\r\n        </div>\r\n        <accordion>\r\n            <div v-show=\"hasHintSlot\">\r\n                <panel header=\"Hint\" expandable no-close>\r\n                    <slot name=\"hint\">\r\n                        No hint is available for this question.\r\n                    </slot>\r\n                </panel>\r\n            </div>\r\n            <panel v-show=\"hasAnswerSlot\" header=\"Answer\" expandable no-close>\r\n                <slot name=\"answer\"></slot>\r\n            </panel>\r\n        </accordion>\r\n    </div>";
+	module.exports = "<div class=\"question-wrapper\">\n        <div class=\"body-wrapper\">\n            <!-- Default slot is question body -->\n            <slot></slot>\n            <div v-if=\"hasInput\" class=\"textarea-container\">\n                <textarea class=\"form-control question-input\" rows=\"3\" placeholder=\"write your answer here...\"></textarea>\n            </div>\n        </div>\n        <accordion>\n            <div v-show=\"hasHintSlot\">\n                <panel header=\"Hint\" expandable no-close>\n                    <slot name=\"hint\">\n                        No hint is available for this question.\n                    </slot>\n                </panel>\n            </div>\n            <panel v-show=\"hasAnswerSlot\" header=\"Answer\" expandable no-close>\n                <slot name=\"answer\"></slot>\n            </panel>\n        </accordion>\n    </div>";
 
 /***/ }),
 /* 278 */
@@ -29508,8 +28725,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-3ec2fc4b&file=Popover.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Popover.vue", function() {
-				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-3ec2fc4b&file=Popover.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Popover.vue");
+			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-6634396a&file=Popover.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Popover.vue", function() {
+				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-6634396a&file=Popover.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Popover.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -29527,7 +28744,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, ".popover.top,\r\n.popover.left,\r\n.popover.right,\r\n.popover.bottom {\r\n  display: block;\r\n  overflow-wrap: break-word;\r\n}\r\n\r\n@media (min-width: 768px) {\r\n  .popover.top,\r\n  .popover.left,\r\n  .popover.right,\r\n  .popover.bottom {\r\n    max-width: 600px;\r\n  }\r\n}\r\n.scale-enter {\r\n  -webkit-animation:scale-in 0.15s ease-in;\r\n          animation:scale-in 0.15s ease-in;\r\n}\r\n.scale-leave {\r\n  -webkit-animation:scale-out 0.15s ease-out;\r\n          animation:scale-out 0.15s ease-out;\r\n}\r\n@-webkit-keyframes scale-in {\r\n  0% {\r\n    -webkit-transform: scale(0);\r\n            transform: scale(0);\r\n    opacity: 0;\r\n  }\r\n  100% {\r\n    -webkit-transform: scale(1);\r\n            transform: scale(1);\r\n    opacity: 1;\r\n  }\r\n}\r\n@keyframes scale-in {\r\n  0% {\r\n    -webkit-transform: scale(0);\r\n            transform: scale(0);\r\n    opacity: 0;\r\n  }\r\n  100% {\r\n    -webkit-transform: scale(1);\r\n            transform: scale(1);\r\n    opacity: 1;\r\n  }\r\n}\r\n@-webkit-keyframes scale-out {\r\n  0% {\r\n    -webkit-transform: scale(1);\r\n            transform: scale(1);\r\n    opacity: 1;\r\n  }\r\n  100% {\r\n    -webkit-transform: scale(0);\r\n            transform: scale(0);\r\n    opacity: 0;\r\n  }\r\n}\r\n@keyframes scale-out {\r\n  0% {\r\n    -webkit-transform: scale(1);\r\n            transform: scale(1);\r\n    opacity: 1;\r\n  }\r\n  100% {\r\n    -webkit-transform: scale(0);\r\n            transform: scale(0);\r\n    opacity: 0;\r\n  }\r\n}", ""]);
+	exports.push([module.id, ".popover.top,\n.popover.left,\n.popover.right,\n.popover.bottom {\n  display: block;\n  overflow-wrap: break-word;\n}\n\n@media (min-width: 768px) {\n  .popover.top,\n  .popover.left,\n  .popover.right,\n  .popover.bottom {\n    max-width: 600px;\n  }\n}\n.scale-enter {\n  -webkit-animation:scale-in 0.15s ease-in;\n          animation:scale-in 0.15s ease-in;\n}\n.scale-leave {\n  -webkit-animation:scale-out 0.15s ease-out;\n          animation:scale-out 0.15s ease-out;\n}\n@-webkit-keyframes scale-in {\n  0% {\n    -webkit-transform: scale(0);\n            transform: scale(0);\n    opacity: 0;\n  }\n  100% {\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    opacity: 1;\n  }\n}\n@keyframes scale-in {\n  0% {\n    -webkit-transform: scale(0);\n            transform: scale(0);\n    opacity: 0;\n  }\n  100% {\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    opacity: 1;\n  }\n}\n@-webkit-keyframes scale-out {\n  0% {\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    opacity: 1;\n  }\n  100% {\n    -webkit-transform: scale(0);\n            transform: scale(0);\n    opacity: 0;\n  }\n}\n@keyframes scale-out {\n  0% {\n    -webkit-transform: scale(1);\n            transform: scale(1);\n    opacity: 1;\n  }\n  100% {\n    -webkit-transform: scale(0);\n            transform: scale(0);\n    opacity: 0;\n  }\n}", ""]);
 	
 	// exports
 
@@ -29560,7 +28777,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	    'trigger:bind': function triggerBind(el, id) {
 	      if (id === this.id) {
 	        el.setTriggerBy(this);
-	        this.setTrigger(el); // rebind events
 	      }
 	    }
 	  },
@@ -29578,115 +28794,61 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 	// </script>
 	
-	
 	// <style>
-	
 	// .popover.top,
-	
 	// .popover.left,
-	
 	// .popover.right,
-	
 	// .popover.bottom {
-	
 	//   display: block;
-	
 	//   overflow-wrap: break-word;
-	
 	// }
-	
 	
 	// @media (min-width: 768px) {
-	
 	//   .popover.top,
-	
 	//   .popover.left,
-	
 	//   .popover.right,
-	
 	//   .popover.bottom {
-	
 	//     max-width: 600px;
-	
 	//   }
-	
 	// }
-	
 	// .scale-enter {
-	
 	//   animation:scale-in 0.15s ease-in;
-	
 	// }
-	
 	// .scale-leave {
-	
 	//   animation:scale-out 0.15s ease-out;
-	
 	// }
-	
 	// @keyframes scale-in {
-	
 	//   0% {
-	
 	//     transform: scale(0);
-	
 	//     opacity: 0;
-	
 	//   }
-	
 	//   100% {
-	
 	//     transform: scale(1);
-	
 	//     opacity: 1;
-	
 	//   }
-	
 	// }
-	
 	// @keyframes scale-out {
-	
 	//   0% {
-	
 	//     transform: scale(1);
-	
 	//     opacity: 1;
-	
 	//   }
-	
 	//   100% {
-	
 	//     transform: scale(0);
-	
 	//     opacity: 0;
-	
 	//   }
-	
 	// }
-	
 	// </style>
 	// <template>
-	
 	//   <span v-el:trigger v-if="hasSlot" v-on:click="false"><slot></slot></span><!--
-	
 	//   --><div v-el:popover v-if="show"
-	
 	//     :class="['popover',placement]"
-	
 	//     :transition="effect"
-	
 	//   >
-	
 	//     <div class="arrow" v-el:arrow></div>
-	
 	//     <h3 class="popover-title" v-if="title" v-on:click="false"><slot name="title">{{{titleRendered}}}</slot></h3>
-	
 	//     <div class="popover-content" v-on:click="false"><slot name="content">{{{contentRendered}}}</slot></div>
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script>
 
@@ -29715,6 +28877,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	var _markdown2 = _interopRequireDefault(_markdown);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function getFirst(nodeList) {
+	  return nodeList && (nodeList.length ? nodeList[0] : nodeList);
+	}
+	
+	function getFirstChild(node) {
+	  return node && (node.children.length ? node.children[0] : node);
+	}
 	
 	exports.default = {
 	  props: {
@@ -29763,27 +28933,19 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	  },
 	  methods: {
-	    /**
-	     * Reset the trigger element
-	     * @param el a Vue instance
-	     */
-	    setTrigger: function setTrigger(el) {
-	      this.trigger = el.trigger; // trigger event
-	      this._trigger = el.$el;
-	    },
 	    toggle: function toggle(e) {
 	      var _this = this;
 	
-	      if (e && this.trigger === 'contextmenu') e.preventDefault();
+	      var trigger = getFirstChild(this.$els.trigger);
+	      if (e && this.trigger === 'contextmenu' && trigger === e.target) e.preventDefault();
 	      if (!(this.show = !this.show)) {
 	        return;
 	      }
-	      var trigger = this._trigger.children.length === 0 ? this._trigger : this._trigger.children[0];
 	      if (e) {
 	        var target = e.target;
-	        if (trigger != e.target) {
+	        if (trigger !== target && getFirst(this._trigger) !== target) {
 	          // Multiple triggers share this popover
-	          trigger = target.children.length === 0 ? target : target.children[0];
+	          trigger = getFirstChild(target);
 	        }
 	      }
 	      setTimeout(function () {
@@ -29791,12 +28953,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	        console.log(trigger.offsetTop);
 	        console.log(popover.offsetHeight);
 	        _this.calculateOffset(trigger, popover);
+	        _this.updateOffsetForMargins(popover);
 	        popover.style.top = _this.position.top + 'px';
 	        popover.style.left = _this.position.left + 'px';
 	        if (_this.$els.arrow) {
 	          var actualWidth = popover.offsetWidth;
 	          var actualHeight = popover.offsetHeight;
 	          _this.calculateOffset(trigger, popover); // Update for CSS adjustment
+	          _this.updateOffsetForMargins(popover);
 	          var delta = _this.getViewportAdjustedDelta(_this.position, actualWidth, actualHeight);
 	          if (delta.left) _this.position.left += delta.left;else _this.position.top += delta.top;
 	          popover.style.top = _this.position.top + 'px';
@@ -29828,6 +28992,17 @@ return /******/ (function(modules) { // webpackBootstrap
 	          break;
 	        default:
 	          console.warn('Wrong placement prop');
+	      }
+	    },
+	    updateOffsetForMargins: function updateOffsetForMargins(popover) {
+	      var rect = popover.getBoundingClientRect();
+	      if (rect.left < 0) {
+	        this.position.left -= rect.left;
+	        var marginLeft = parseInt(jQuery(popover).css('margin-left'), 10);
+	        if (marginLeft < 0) {
+	          this.position.left += marginLeft;
+	          popover.style.marginLeft = 0;
+	        }
 	      }
 	    },
 	    getViewportAdjustedDelta: function getViewportAdjustedDelta(pos, actualWidth, actualHeight) {
@@ -29970,7 +29145,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 289 */
 /***/ (function(module, exports) {
 
-	module.exports = "<span v-el:trigger v-if=\"hasSlot\" v-on:click=\"false\"><slot></slot></span><!--\r\n  --><div v-el:popover v-if=\"show\"\r\n    :class=\"['popover',placement]\"\r\n    :transition=\"effect\"\r\n  >\r\n    <div class=\"arrow\" v-el:arrow></div>\r\n    <h3 class=\"popover-title\" v-if=\"title\" v-on:click=\"false\"><slot name=\"title\">{{{titleRendered}}}</slot></h3>\r\n    <div class=\"popover-content\" v-on:click=\"false\"><slot name=\"content\">{{{contentRendered}}}</slot></div>\r\n  </div>";
+	module.exports = "<span v-el:trigger v-if=\"hasSlot\" v-on:click=\"false\"><slot></slot></span><!--\n  --><div v-el:popover v-if=\"show\"\n    :class=\"['popover',placement]\"\n    :transition=\"effect\"\n  >\n    <div class=\"arrow\" v-el:arrow></div>\n    <h3 class=\"popover-title\" v-if=\"title\" v-on:click=\"false\"><slot name=\"title\">{{{titleRendered}}}</slot></h3>\n    <div class=\"popover-content\" v-on:click=\"false\"><slot name=\"content\">{{{contentRendered}}}</slot></div>\n  </div>";
 
 /***/ }),
 /* 290 */
@@ -29988,10 +29163,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	if (!hotAPI.compatible) return
 	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Select.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Select.vue","-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-d2dd4b74&file=Select.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Select.vue"], function () {
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Select.vue","-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-5614d974&file=Select.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Select.vue"], function () {
 	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Select.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-d2dd4b74&file=Select.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Select.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-5614d974&file=Select.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Select.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -30013,8 +29188,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-d2dd4b74&file=Select.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Select.vue", function() {
-				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-d2dd4b74&file=Select.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Select.vue");
+			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-5614d974&file=Select.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Select.vue", function() {
+				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-5614d974&file=Select.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Select.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -30032,7 +29207,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, "button.form-control.dropdown-toggle[_v-d2dd4b74]{\r\n  height: auto;\r\n  padding-right: 24px;\r\n}\r\nbutton.form-control.dropdown-toggle[_v-d2dd4b74]:after{\r\n  content: ' ';\r\n  position: absolute;\r\n  right: 13px;\r\n  top: 50%;\r\n  margin: -1px 0 0;\r\n  border-top: 4px dashed;\r\n  border-top: 4px solid \\9;\r\n  border-right: 4px solid transparent;\r\n  border-left: 4px solid transparent;\r\n}\r\n.bs-searchbox[_v-d2dd4b74] {\r\n  position: relative;\r\n  margin: 4px 8px;\r\n}\r\n.bs-searchbox .close[_v-d2dd4b74] {\r\n  position: absolute;\r\n  top: 0;\r\n  right: 0;\r\n  z-index: 2;\r\n  display: block;\r\n  width: 34px;\r\n  height: 34px;\r\n  line-height: 34px;\r\n  text-align: center;\r\n}\r\n.bs-searchbox input[_v-d2dd4b74]:focus,\r\n.secret:focus + button[_v-d2dd4b74] {\r\n  outline: 0;\r\n  border-color: #66afe9 !important;\r\n  box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);\r\n}\r\n.secret[_v-d2dd4b74] {\r\n  border: 0;\r\n  clip: rect(0 0 0 0);\r\n  height: 1px;\r\n  margin: -1px;\r\n  overflow: hidden;\r\n  padding: 0;\r\n  position: absolute;\r\n  width: 1px;\r\n}\r\nbutton>.close[_v-d2dd4b74] { margin-left: 5px;}\r\n.notify.out[_v-d2dd4b74] { position: relative; }\r\n.notify.in[_v-d2dd4b74],\r\n.notify>div[_v-d2dd4b74] {\r\n  position: absolute;\r\n  width: 96%;\r\n  margin: 0 2%;\r\n  min-height: 26px;\r\n  padding: 3px 5px;\r\n  background: #f5f5f5;\r\n  border: 1px solid #e3e3e3;\r\n  box-shadow: inset 0 1px 1px rgba(0,0,0,.05);\r\n  pointer-events: none;\r\n}\r\n.notify>div[_v-d2dd4b74] {\r\n  top: 5px;\r\n  z-index: 1;\r\n}\r\n.notify.in[_v-d2dd4b74] {\r\n  opacity: .9;\r\n  bottom: 5px;\r\n}\r\n.btn-group-justified .dropdown-toggle>span[_v-d2dd4b74]:not(.close) {\r\n  width: calc(100% - 18px);\r\n  display: inline-block;\r\n  overflow: hidden;\r\n  white-space: nowrap;\r\n  text-overflow: ellipsis;\r\n  margin-bottom: -4px;\r\n}\r\n.btn-group-justified .dropdown-menu[_v-d2dd4b74] { width: 100%; }", ""]);
+	exports.push([module.id, "button.form-control.dropdown-toggle[_v-5614d974]{\n  height: auto;\n  padding-right: 24px;\n}\nbutton.form-control.dropdown-toggle[_v-5614d974]:after{\n  content: ' ';\n  position: absolute;\n  right: 13px;\n  top: 50%;\n  margin: -1px 0 0;\n  border-top: 4px dashed;\n  border-top: 4px solid \\9;\n  border-right: 4px solid transparent;\n  border-left: 4px solid transparent;\n}\n.bs-searchbox[_v-5614d974] {\n  position: relative;\n  margin: 4px 8px;\n}\n.bs-searchbox .close[_v-5614d974] {\n  position: absolute;\n  top: 0;\n  right: 0;\n  z-index: 2;\n  display: block;\n  width: 34px;\n  height: 34px;\n  line-height: 34px;\n  text-align: center;\n}\n.bs-searchbox input[_v-5614d974]:focus,\n.secret:focus + button[_v-5614d974] {\n  outline: 0;\n  border-color: #66afe9 !important;\n  box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);\n}\n.secret[_v-5614d974] {\n  border: 0;\n  clip: rect(0 0 0 0);\n  height: 1px;\n  margin: -1px;\n  overflow: hidden;\n  padding: 0;\n  position: absolute;\n  width: 1px;\n}\nbutton>.close[_v-5614d974] { margin-left: 5px;}\n.notify.out[_v-5614d974] { position: relative; }\n.notify.in[_v-5614d974],\n.notify>div[_v-5614d974] {\n  position: absolute;\n  width: 96%;\n  margin: 0 2%;\n  min-height: 26px;\n  padding: 3px 5px;\n  background: #f5f5f5;\n  border: 1px solid #e3e3e3;\n  box-shadow: inset 0 1px 1px rgba(0,0,0,.05);\n  pointer-events: none;\n}\n.notify>div[_v-5614d974] {\n  top: 5px;\n  z-index: 1;\n}\n.notify.in[_v-5614d974] {\n  opacity: .9;\n  bottom: 5px;\n}\n.btn-group-justified .dropdown-toggle>span[_v-5614d974]:not(.close) {\n  width: calc(100% - 18px);\n  display: inline-block;\n  overflow: hidden;\n  white-space: nowrap;\n  text-overflow: ellipsis;\n  margin-bottom: -4px;\n}\n.btn-group-justified .dropdown-menu[_v-5614d974] { width: 100%; }", ""]);
 	
 	// exports
 
@@ -30060,83 +29235,44 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	//   <div v-el:select :class="classes">
-	
 	//     <button type="button" class="form-control dropdown-toggle"
-	
 	//       :disabled="disabled || !hasParent"
-	
 	//       :readonly="readonly"
-	
 	//       @click="toggle()"
-	
 	//       @keyup.esc="show = false"
-	
 	//     >
-	
 	//       <span class="btn-content" v-html="loading ? text.loading : showPlaceholder || selected"></span>
-	
 	//       <span v-if="clearButton&&values.length" class="close" @click="clear()">&times;</span>
-	
 	//     </button>
-	
 	//     <select v-el:sel v-model="value" v-show="show" name="{{name}}" class="secret" :multiple="multiple" :required="required" :readonly="readonly" :disabled="disabled">
-	
 	//       <option v-if="required" value=""></option>
-	
 	//       <option v-for="option in options" :value="option[optionsValue]||option">{{ option[optionsLabel]||option }}</option>
-	
 	//     </select>
-	
 	//     <ul class="dropdown-menu">
-	
 	//       <template v-if="options.length">
-	
 	//         <li v-if="canSearch" class="bs-searchbox">
-	
 	//           <input type="text" placeholder="{{searchText||text.search}}" class="form-control" autocomplete="off"
-	
 	//             v-el:search
-	
 	//             v-model="searchValue"
-	
 	//             @keyup.esc="show = false"
-	
 	//           />
-	
 	//           <span v-show="searchValue" class="close" @click="clearSearch">&times;</span>
-	
 	//         </li>
-	
 	//         <li v-if="required&&!clearButton"><a @mousedown.prevent="clear() && blur()">{{ placeholder || text.notSelected }}</a></li>
-	
 	//         <li v-for="option in options | filterBy searchValue" :id="option[optionsValue]||option">
-	
 	//           <a @mousedown.prevent="select(option[optionsValue],option)">
-	
 	//             <span v-html="option[optionsLabel]||option"></span>
-	
 	//             <span class="glyphicon glyphicon-ok check-mark" v-show="isSelected(option[optionsValue])"></span>
-	
 	//           </a>
-	
 	//         </li>
-	
 	//       </template>
-	
 	//       <slot></slot>
-	
 	//       <div v-if="showNotify && !closeOnSelect" class="notify in" transition="fadein">{{limitText}}</div>
-	
 	//     </ul>
-	
 	//     <div v-if="showNotify && closeOnSelect" class="notify out" transition="fadein"><div>{{limitText}}</div></div>
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script>
 	var timeout = {};
@@ -30448,163 +29584,84 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 	// </script>
 	
-	
 	// <style scoped>
-	
 	// button.form-control.dropdown-toggle{
-	
 	//   height: auto;
-	
 	//   padding-right: 24px;
-	
 	// }
-	
 	// button.form-control.dropdown-toggle:after{
-	
 	//   content: ' ';
-	
 	//   position: absolute;
-	
 	//   right: 13px;
-	
 	//   top: 50%;
-	
 	//   margin: -1px 0 0;
-	
 	//   border-top: 4px dashed;
-	
 	//   border-top: 4px solid \9;
-	
 	//   border-right: 4px solid transparent;
-	
 	//   border-left: 4px solid transparent;
-	
 	// }
-	
 	// .bs-searchbox {
-	
 	//   position: relative;
-	
 	//   margin: 4px 8px;
-	
 	// }
-	
 	// .bs-searchbox .close {
-	
 	//   position: absolute;
-	
 	//   top: 0;
-	
 	//   right: 0;
-	
 	//   z-index: 2;
-	
 	//   display: block;
-	
 	//   width: 34px;
-	
 	//   height: 34px;
-	
 	//   line-height: 34px;
-	
 	//   text-align: center;
-	
 	// }
-	
 	// .bs-searchbox input:focus,
-	
 	// .secret:focus + button {
-	
 	//   outline: 0;
-	
 	//   border-color: #66afe9 !important;
-	
 	//   box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
-	
 	// }
-	
 	// .secret {
-	
 	//   border: 0;
-	
 	//   clip: rect(0 0 0 0);
-	
 	//   height: 1px;
-	
 	//   margin: -1px;
-	
 	//   overflow: hidden;
-	
 	//   padding: 0;
-	
 	//   position: absolute;
-	
 	//   width: 1px;
-	
 	// }
-	
 	// button>.close { margin-left: 5px;}
-	
 	// .notify.out { position: relative; }
-	
 	// .notify.in,
-	
 	// .notify>div {
-	
 	//   position: absolute;
-	
 	//   width: 96%;
-	
 	//   margin: 0 2%;
-	
 	//   min-height: 26px;
-	
 	//   padding: 3px 5px;
-	
 	//   background: #f5f5f5;
-	
 	//   border: 1px solid #e3e3e3;
-	
 	//   box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
-	
 	//   pointer-events: none;
-	
 	// }
-	
 	// .notify>div {
-	
 	//   top: 5px;
-	
 	//   z-index: 1;
-	
 	// }
-	
 	// .notify.in {
-	
 	//   opacity: .9;
-	
 	//   bottom: 5px;
-	
 	// }
-	
 	// .btn-group-justified .dropdown-toggle>span:not(.close) {
-	
 	//   width: calc(100% - 18px);
-	
 	//   display: inline-block;
-	
 	//   overflow: hidden;
-	
 	//   white-space: nowrap;
-	
 	//   text-overflow: ellipsis;
-	
 	//   margin-bottom: -4px;
-	
 	// }
-	
 	// .btn-group-justified .dropdown-menu { width: 100%; }
-	
 	// </style>
 
 /***/ }),
@@ -31042,7 +30099,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 306 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div v-el:select=\"\" :class=\"classes\" _v-d2dd4b74=\"\">\n    <button type=\"button\" class=\"form-control dropdown-toggle\" :disabled=\"disabled || !hasParent\" :readonly=\"readonly\" @click=\"toggle()\" @keyup.esc=\"show = false\" _v-d2dd4b74=\"\">\n      <span class=\"btn-content\" v-html=\"loading ? text.loading : showPlaceholder || selected\" _v-d2dd4b74=\"\"></span>\n      <span v-if=\"clearButton&amp;&amp;values.length\" class=\"close\" @click=\"clear()\" _v-d2dd4b74=\"\">×</span>\n    </button>\n    <select v-el:sel=\"\" v-model=\"value\" v-show=\"show\" name=\"{{name}}\" class=\"secret\" :multiple=\"multiple\" :required=\"required\" :readonly=\"readonly\" :disabled=\"disabled\" _v-d2dd4b74=\"\">\n      <option v-if=\"required\" value=\"\" _v-d2dd4b74=\"\"></option>\n      <option v-for=\"option in options\" :value=\"option[optionsValue]||option\" _v-d2dd4b74=\"\">{{ option[optionsLabel]||option }}</option>\n    </select>\n    <ul class=\"dropdown-menu\" _v-d2dd4b74=\"\">\n      <template v-if=\"options.length\" _v-d2dd4b74=\"\">\n        <li v-if=\"canSearch\" class=\"bs-searchbox\" _v-d2dd4b74=\"\">\n          <input type=\"text\" placeholder=\"{{searchText||text.search}}\" class=\"form-control\" autocomplete=\"off\" v-el:search=\"\" v-model=\"searchValue\" @keyup.esc=\"show = false\" _v-d2dd4b74=\"\">\n          <span v-show=\"searchValue\" class=\"close\" @click=\"clearSearch\" _v-d2dd4b74=\"\">×</span>\n        </li>\n        <li v-if=\"required&amp;&amp;!clearButton\" _v-d2dd4b74=\"\"><a @mousedown.prevent=\"clear() &amp;&amp; blur()\" _v-d2dd4b74=\"\">{{ placeholder || text.notSelected }}</a></li>\n        <li v-for=\"option in options | filterBy searchValue\" :id=\"option[optionsValue]||option\" _v-d2dd4b74=\"\">\n          <a @mousedown.prevent=\"select(option[optionsValue],option)\" _v-d2dd4b74=\"\">\n            <span v-html=\"option[optionsLabel]||option\" _v-d2dd4b74=\"\"></span>\n            <span class=\"glyphicon glyphicon-ok check-mark\" v-show=\"isSelected(option[optionsValue])\" _v-d2dd4b74=\"\"></span>\n          </a>\n        </li>\n      </template>\n      <slot _v-d2dd4b74=\"\"></slot>\n      <div v-if=\"showNotify &amp;&amp; !closeOnSelect\" class=\"notify in\" transition=\"fadein\" _v-d2dd4b74=\"\">{{limitText}}</div>\n    </ul>\n    <div v-if=\"showNotify &amp;&amp; closeOnSelect\" class=\"notify out\" transition=\"fadein\" _v-d2dd4b74=\"\"><div _v-d2dd4b74=\"\">{{limitText}}</div></div>\n  </div>";
+	module.exports = "<div v-el:select=\"\" :class=\"classes\" _v-5614d974=\"\">\n    <button type=\"button\" class=\"form-control dropdown-toggle\" :disabled=\"disabled || !hasParent\" :readonly=\"readonly\" @click=\"toggle()\" @keyup.esc=\"show = false\" _v-5614d974=\"\">\n      <span class=\"btn-content\" v-html=\"loading ? text.loading : showPlaceholder || selected\" _v-5614d974=\"\"></span>\n      <span v-if=\"clearButton&amp;&amp;values.length\" class=\"close\" @click=\"clear()\" _v-5614d974=\"\">×</span>\n    </button>\n    <select v-el:sel=\"\" v-model=\"value\" v-show=\"show\" name=\"{{name}}\" class=\"secret\" :multiple=\"multiple\" :required=\"required\" :readonly=\"readonly\" :disabled=\"disabled\" _v-5614d974=\"\">\n      <option v-if=\"required\" value=\"\" _v-5614d974=\"\"></option>\n      <option v-for=\"option in options\" :value=\"option[optionsValue]||option\" _v-5614d974=\"\">{{ option[optionsLabel]||option }}</option>\n    </select>\n    <ul class=\"dropdown-menu\" _v-5614d974=\"\">\n      <template v-if=\"options.length\" _v-5614d974=\"\">\n        <li v-if=\"canSearch\" class=\"bs-searchbox\" _v-5614d974=\"\">\n          <input type=\"text\" placeholder=\"{{searchText||text.search}}\" class=\"form-control\" autocomplete=\"off\" v-el:search=\"\" v-model=\"searchValue\" @keyup.esc=\"show = false\" _v-5614d974=\"\">\n          <span v-show=\"searchValue\" class=\"close\" @click=\"clearSearch\" _v-5614d974=\"\">×</span>\n        </li>\n        <li v-if=\"required&amp;&amp;!clearButton\" _v-5614d974=\"\"><a @mousedown.prevent=\"clear() &amp;&amp; blur()\" _v-5614d974=\"\">{{ placeholder || text.notSelected }}</a></li>\n        <li v-for=\"option in options | filterBy searchValue\" :id=\"option[optionsValue]||option\" _v-5614d974=\"\">\n          <a @mousedown.prevent=\"select(option[optionsValue],option)\" _v-5614d974=\"\">\n            <span v-html=\"option[optionsLabel]||option\" _v-5614d974=\"\"></span>\n            <span class=\"glyphicon glyphicon-ok check-mark\" v-show=\"isSelected(option[optionsValue])\" _v-5614d974=\"\"></span>\n          </a>\n        </li>\n      </template>\n      <slot _v-5614d974=\"\"></slot>\n      <div v-if=\"showNotify &amp;&amp; !closeOnSelect\" class=\"notify in\" transition=\"fadein\" _v-5614d974=\"\">{{limitText}}</div>\n    </ul>\n    <div v-if=\"showNotify &amp;&amp; closeOnSelect\" class=\"notify out\" transition=\"fadein\" _v-5614d974=\"\"><div _v-5614d974=\"\">{{limitText}}</div></div>\n  </div>";
 
 /***/ }),
 /* 307 */
@@ -31087,21 +30144,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	//   <div role="tabpanel" class="tab-pane active" v-show="show"
-	
 	//     :class="{hide:!show}"
-	
 	//     :transition="transition"
-	
 	//   >
-	
 	//     <slot></slot>
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -31172,7 +30221,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 309 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div role=\"tabpanel\" class=\"tab-pane active\" v-show=\"show\"\r\n    :class=\"{hide:!show}\"\r\n    :transition=\"transition\"\r\n  >\r\n    <slot></slot>\r\n  </div>";
+	module.exports = "<div role=\"tabpanel\" class=\"tab-pane active\" v-show=\"show\"\n    :class=\"{hide:!show}\"\n    :transition=\"transition\"\n  >\n    <slot></slot>\n  </div>";
 
 /***/ }),
 /* 310 */
@@ -31190,10 +30239,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	if (!hotAPI.compatible) return
 	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./TabGroup.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./TabGroup.vue","-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-f1755498&file=TabGroup.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./TabGroup.vue"], function () {
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./TabGroup.vue","-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-85016298&file=TabGroup.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./TabGroup.vue"], function () {
 	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./TabGroup.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-f1755498&file=TabGroup.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./TabGroup.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-85016298&file=TabGroup.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./TabGroup.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -31215,8 +30264,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-f1755498&file=TabGroup.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./TabGroup.vue", function() {
-				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-f1755498&file=TabGroup.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./TabGroup.vue");
+			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-85016298&file=TabGroup.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./TabGroup.vue", function() {
+				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-85016298&file=TabGroup.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./TabGroup.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -31234,7 +30283,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, ".nav-tabs[_v-f1755498] {\r\n  margin-bottom: 15px;\r\n}", ""]);
+	exports.push([module.id, ".nav-tabs[_v-85016298] {\n  margin-bottom: 15px;\n}", ""]);
 	
 	// exports
 
@@ -31258,7 +30307,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template><slot></slot></template>
-	
 	
 	// <script>
 	exports.default = {
@@ -31315,15 +30363,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 	  // </script>
 	
-	
 	  // <style scoped>
-	
 	  // .nav-tabs {
-	
 	  //   margin-bottom: 15px;
-	
 	  // }
-	
 	  // </style>
 	
 	};
@@ -31332,7 +30375,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 314 */
 /***/ (function(module, exports) {
 
-	module.exports = "<slot _v-f1755498=\"\"></slot>";
+	module.exports = "<slot _v-85016298=\"\"></slot>";
 
 /***/ }),
 /* 315 */
@@ -31350,10 +30393,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	if (!hotAPI.compatible) return
 	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Tabset.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Tabset.vue","-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-12fe3d77&file=Tabset.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Tabset.vue"], function () {
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Tabset.vue","-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-51627677&file=Tabset.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Tabset.vue"], function () {
 	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./Tabset.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-12fe3d77&file=Tabset.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Tabset.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-51627677&file=Tabset.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./Tabset.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -31375,8 +30418,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-12fe3d77&file=Tabset.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Tabset.vue", function() {
-				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-12fe3d77&file=Tabset.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Tabset.vue");
+			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-51627677&file=Tabset.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Tabset.vue", function() {
+				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-51627677&file=Tabset.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Tabset.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -31394,7 +30437,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, ".nav-tabs[_v-12fe3d77] {\r\n  margin-bottom: 15px;\r\n}", ""]);
+	exports.push([module.id, ".nav-tabs[_v-51627677] {\n  margin-bottom: 15px;\n}", ""]);
 	
 	// exports
 
@@ -31418,37 +30461,21 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	//   <!-- Nav tabs -->
-	
 	//   <ul class="nav nav-{{navStyle}}" role="tablist">
-	
 	//     <template v-for="t in headers">
-	
 	//       <li v-if="!t._tabgroup" :class="{active:t.active, disabled:t.disabled}" @click.prevent="select(t)">
-	
 	//         <a href="#"><slot name="header">{{{t.headerRendered}}}</slot></a>
-	
 	//       </li>
-	
 	//       <dropdown v-else :text="t.headerRendered" :class="{active:t.active}" :disabled="t.disabled">
-	
 	//         <li v-for="tab in t.tabs" :class="{disabled:tab.disabled}"><a href="#" @click.prevent="select(tab)">{{{tab.headerRendered}}}</a></li>
-	
 	//       </dropdown>
-	
 	//     </template>
-	
 	//   </ul>
-	
 	//   <div class="tab-content" v-el:tab-content>
-	
 	//     <slot></slot>
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -31500,15 +30527,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 	  // </script>
 	
-	
 	  // <style scoped>
-	
 	  // .nav-tabs {
-	
 	  //   margin-bottom: 15px;
-	
 	  // }
-	
 	  // </style>
 	
 	};
@@ -31517,7 +30539,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 319 */
 /***/ (function(module, exports) {
 
-	module.exports = "<!-- Nav tabs -->\n  <ul class=\"nav nav-{{navStyle}}\" role=\"tablist\" _v-12fe3d77=\"\">\n    <template v-for=\"t in headers\" _v-12fe3d77=\"\">\n      <li v-if=\"!t._tabgroup\" :class=\"{active:t.active, disabled:t.disabled}\" @click.prevent=\"select(t)\" _v-12fe3d77=\"\">\n        <a href=\"#\" _v-12fe3d77=\"\"><slot name=\"header\" _v-12fe3d77=\"\">{{{t.headerRendered}}}</slot></a>\n      </li>\n      <dropdown v-else=\"\" :text=\"t.headerRendered\" :class=\"{active:t.active}\" :disabled=\"t.disabled\" _v-12fe3d77=\"\">\n        <li v-for=\"tab in t.tabs\" :class=\"{disabled:tab.disabled}\" _v-12fe3d77=\"\"><a href=\"#\" @click.prevent=\"select(tab)\" _v-12fe3d77=\"\">{{{tab.headerRendered}}}</a></li>\n      </dropdown>\n    </template>\n  </ul>\n  <div class=\"tab-content\" v-el:tab-content=\"\" _v-12fe3d77=\"\">\n    <slot _v-12fe3d77=\"\"></slot>\n  </div>";
+	module.exports = "<!-- Nav tabs -->\n  <ul class=\"nav nav-{{navStyle}}\" role=\"tablist\" _v-51627677=\"\">\n    <template v-for=\"t in headers\" _v-51627677=\"\">\n      <li v-if=\"!t._tabgroup\" :class=\"{active:t.active, disabled:t.disabled}\" @click.prevent=\"select(t)\" _v-51627677=\"\">\n        <a href=\"#\" _v-51627677=\"\"><slot name=\"header\" _v-51627677=\"\">{{{t.headerRendered}}}</slot></a>\n      </li>\n      <dropdown v-else=\"\" :text=\"t.headerRendered\" :class=\"{active:t.active}\" :disabled=\"t.disabled\" _v-51627677=\"\">\n        <li v-for=\"tab in t.tabs\" :class=\"{disabled:tab.disabled}\" _v-51627677=\"\"><a href=\"#\" @click.prevent=\"select(tab)\" _v-51627677=\"\">{{{tab.headerRendered}}}</a></li>\n      </dropdown>\n    </template>\n  </ul>\n  <div class=\"tab-content\" v-el:tab-content=\"\" _v-51627677=\"\">\n    <slot _v-51627677=\"\"></slot>\n  </div>";
 
 /***/ }),
 /* 320 */
@@ -31560,8 +30582,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-63588ea9&file=Tooltip.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Tooltip.vue", function() {
-				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-63588ea9&file=Tooltip.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Tooltip.vue");
+			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-1d0914ae&file=Tooltip.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Tooltip.vue", function() {
+				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-1d0914ae&file=Tooltip.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Tooltip.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -31579,7 +30601,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, ".tooltip.top,\r\n.tooltip.left,\r\n.tooltip.right,\r\n.tooltip.bottom {\r\n  opacity: .9\r\n}\r\n.fadein-enter {\r\n  -webkit-animation:fadein-in 0.3s ease-in;\r\n          animation:fadein-in 0.3s ease-in;\r\n}\r\n.fadein-leave {\r\n  -webkit-animation:fadein-out 0.3s ease-out;\r\n          animation:fadein-out 0.3s ease-out;\r\n}\r\n@-webkit-keyframes fadein-in {\r\n  0% {\r\n    opacity: 0;\r\n  }\r\n  100% {\r\n    opacity: .9;\r\n  }\r\n}\r\n@keyframes fadein-in {\r\n  0% {\r\n    opacity: 0;\r\n  }\r\n  100% {\r\n    opacity: .9;\r\n  }\r\n}\r\n@-webkit-keyframes fadein-out {\r\n  0% {\r\n    opacity: .9;\r\n  }\r\n  100% {\r\n    opacity: 0;\r\n  }\r\n}\r\n@keyframes fadein-out {\r\n  0% {\r\n    opacity: .9;\r\n  }\r\n  100% {\r\n    opacity: 0;\r\n  }\r\n}", ""]);
+	exports.push([module.id, ".tooltip.top,\n.tooltip.left,\n.tooltip.right,\n.tooltip.bottom {\n  opacity: .9\n}\n.fadein-enter {\n  -webkit-animation:fadein-in 0.3s ease-in;\n          animation:fadein-in 0.3s ease-in;\n}\n.fadein-leave {\n  -webkit-animation:fadein-out 0.3s ease-out;\n          animation:fadein-out 0.3s ease-out;\n}\n@-webkit-keyframes fadein-in {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: .9;\n  }\n}\n@keyframes fadein-in {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: .9;\n  }\n}\n@-webkit-keyframes fadein-out {\n  0% {\n    opacity: .9;\n  }\n  100% {\n    opacity: 0;\n  }\n}\n@keyframes fadein-out {\n  0% {\n    opacity: .9;\n  }\n  100% {\n    opacity: 0;\n  }\n}", ""]);
 	
 	// exports
 
@@ -31605,29 +30627,17 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	// <template>
-	
 	//   <span v-el:trigger v-on:click="false"><slot></slot></span><!--
-	
 	//   --><div v-el:popover v-if="show" style="display:block;"
-	
 	//     :class="['tooltip',placement]"
-	
 	//     :transition="effect"
-	
 	//   >
-	
 	//     <div class="tooltip-arrow"></div>
-	
 	//     <div class="tooltip-inner" v-on:click="false">
-	
 	//       <slot name="content">{{{contentRendered}}}</slot>
-	
 	//    </div>
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -31650,7 +30660,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	    'trigger:bind': function triggerBind(el, id) {
 	      if (id === this.id) {
 	        el.setTriggerBy(this);
-	        this.setTrigger(el); // rebind events
 	      }
 	    }
 	  },
@@ -31663,72 +30672,42 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 	// </script>
 	
-	
 	// <style>
-	
 	// .tooltip.top,
-	
 	// .tooltip.left,
-	
 	// .tooltip.right,
-	
 	// .tooltip.bottom {
-	
 	//   opacity: .9
-	
 	// }
-	
 	// .fadein-enter {
-	
 	//   animation:fadein-in 0.3s ease-in;
-	
 	// }
-	
 	// .fadein-leave {
-	
 	//   animation:fadein-out 0.3s ease-out;
-	
 	// }
-	
 	// @keyframes fadein-in {
-	
 	//   0% {
-	
 	//     opacity: 0;
-	
 	//   }
-	
 	//   100% {
-	
 	//     opacity: .9;
-	
 	//   }
-	
 	// }
-	
 	// @keyframes fadein-out {
-	
 	//   0% {
-	
 	//     opacity: .9;
-	
 	//   }
-	
 	//   100% {
-	
 	//     opacity: 0;
-	
 	//   }
-	
 	// }
-	
 	// </style>
 
 /***/ }),
 /* 324 */
 /***/ (function(module, exports) {
 
-	module.exports = "<span v-el:trigger v-on:click=\"false\"><slot></slot></span><!--\r\n  --><div v-el:popover v-if=\"show\" style=\"display:block;\"\r\n    :class=\"['tooltip',placement]\"\r\n    :transition=\"effect\"\r\n  >\r\n    <div class=\"tooltip-arrow\"></div>\r\n    <div class=\"tooltip-inner\" v-on:click=\"false\">\r\n      <slot name=\"content\">{{{contentRendered}}}</slot>\r\n   </div>\r\n  </div>";
+	module.exports = "<span v-el:trigger v-on:click=\"false\"><slot></slot></span><!--\n  --><div v-el:popover v-if=\"show\" style=\"display:block;\"\n    :class=\"['tooltip',placement]\"\n    :transition=\"effect\"\n  >\n    <div class=\"tooltip-arrow\"></div>\n    <div class=\"tooltip-inner\" v-on:click=\"false\">\n      <slot name=\"content\">{{{contentRendered}}}</slot>\n   </div>\n  </div>";
 
 /***/ }),
 /* 325 */
@@ -31843,8 +30822,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-445d68a0&file=Pic.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Pic.vue", function() {
-				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-445d68a0&file=Pic.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Pic.vue");
+			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-477fb2b0&file=Pic.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Pic.vue", function() {
+				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-477fb2b0&file=Pic.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Pic.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -31862,7 +30841,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, ".image-wrapper {\r\n        display: inline-block;\r\n        text-align: center;\r\n        padding: 4px;\r\n    }", ""]);
+	exports.push([module.id, ".image-wrapper {\n        display: inline-block;\n        text-align: center;\n        padding: 4px;\n    }", ""]);
 	
 	// exports
 
@@ -31877,21 +30856,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 	// <template>
-	
 	//     <div class="image-wrapper">
-	
 	//         <img :src="src" :alt="alt" :width="width" :height="height">
-	
 	//         <div class="image-caption">
-	
 	//             <slot></slot>
-	
 	//         </div>
-	
 	//     </div>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -31911,19 +30882,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 	  // </script>
 	
-	
 	  // <style>
-	
 	  //     .image-wrapper {
-	
 	  //         display: inline-block;
-	
 	  //         text-align: center;
-	
 	  //         padding: 4px;
-	
 	  //     }
-	
 	  // </style>
 	
 	};
@@ -31932,7 +30896,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 331 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div class=\"image-wrapper\">\r\n        <img :src=\"src\" :alt=\"alt\" :width=\"width\" :height=\"height\">\r\n        <div class=\"image-caption\">\r\n            <slot></slot>\r\n        </div>\r\n    </div>";
+	module.exports = "<div class=\"image-wrapper\">\n        <img :src=\"src\" :alt=\"alt\" :width=\"width\" :height=\"height\">\n        <div class=\"image-caption\">\n            <slot></slot>\n        </div>\n    </div>";
 
 /***/ }),
 /* 332 */
@@ -31950,10 +30914,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	if (!hotAPI.compatible) return
 	var id = "-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./TipBox.vue"
 	hotAPI.createRecord(id, module.exports)
-	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./TipBox.vue","-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-54a9a67a&file=TipBox.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./TipBox.vue"], function () {
+	module.hot.accept(["-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./TipBox.vue","-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-d9e4410c&file=TipBox.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./TipBox.vue"], function () {
 	var newOptions = require("-!babel!../node_modules/vue-loader/lib/selector.js?type=script&index=0!./TipBox.vue")
 	if (newOptions && newOptions.__esModule) newOptions = newOptions.default
-	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-54a9a67a&file=TipBox.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./TipBox.vue")
+	var newTemplate = require("-!vue-html-loader!../node_modules/vue-loader/lib/template-rewriter.js?id=_v-d9e4410c&file=TipBox.vue!../node_modules/vue-loader/lib/selector.js?type=template&index=0!./TipBox.vue")
 	hotAPI.update(id, newOptions, newTemplate)
 	})
 	})()
@@ -31975,8 +30939,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-54a9a67a&file=TipBox.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./TipBox.vue", function() {
-				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-54a9a67a&file=TipBox.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./TipBox.vue");
+			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-d9e4410c&file=TipBox.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./TipBox.vue", function() {
+				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-d9e4410c&file=TipBox.vue&scoped=true!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./TipBox.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -31994,7 +30958,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, ".container[_v-54a9a67a] {\r\n        display: -webkit-box;\r\n        display: -ms-flexbox;\r\n        display: flex;\r\n        -webkit-box-orient: horizontal;\r\n        -webkit-box-direction: normal;\r\n            -ms-flex-direction: row;\r\n                flex-direction: row;\r\n        width: 100%;\r\n        border-radius: 6px;\r\n    }\r\n\r\n    .icon-wrapper[_v-54a9a67a] {\r\n        display: -webkit-box;\r\n        display: -ms-flexbox;\r\n        display: flex;\r\n        margin-right: .5em;\r\n        width: 22px;\r\n        height: 22px;\r\n    }\r\n\r\n    .contents[_v-54a9a67a] {\r\n        padding: 0 6px;\r\n        width: 100%;\r\n    }\r\n\r\n    .alert-default[_v-54a9a67a] {\r\n        color: #24292e;\r\n        background-color: #f6f8fa;\r\n        border-color: #e8ebef;\r\n    }", ""]);
+	exports.push([module.id, ".container[_v-d9e4410c] {\n        display: -webkit-box;\n        display: -ms-flexbox;\n        display: flex;\n        -webkit-box-orient: horizontal;\n        -webkit-box-direction: normal;\n            -ms-flex-direction: row;\n                flex-direction: row;\n        width: 100%;\n        border-radius: 6px;\n    }\n\n    .icon-wrapper[_v-d9e4410c] {\n        display: -webkit-box;\n        display: -ms-flexbox;\n        display: flex;\n        margin-right: .5em;\n        width: 22px;\n        height: 22px;\n    }\n\n    .contents[_v-d9e4410c] {\n        padding: 0 6px;\n        width: 100%;\n    }\n\n    .alert-default[_v-d9e4410c] {\n        color: #24292e;\n        background-color: #f6f8fa;\n        border-color: #e8ebef;\n    }", ""]);
 	
 	// exports
 
@@ -32066,76 +31030,43 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 	  // </script>
 	
-	
 	  // <style scoped>
-	
 	  //     .container {
-	
 	  //         display: flex;
-	
 	  //         flex-direction: row;
-	
 	  //         width: 100%;
-	
 	  //         border-radius: 6px;
-	
 	  //     }
-	
 	
 	  //     .icon-wrapper {
-	
 	  //         display: flex;
-	
 	  //         margin-right: .5em;
-	
 	  //         width: 22px;
-	
 	  //         height: 22px;
-	
 	  //     }
-	
 	
 	  //     .contents {
-	
 	  //         padding: 0 6px;
-	
 	  //         width: 100%;
-	
 	  //     }
-	
 	
 	  //     .alert-default {
-	
 	  //         color: #24292e;
-	
 	  //         background-color: #f6f8fa;
-	
 	  //         border-color: #e8ebef;
-	
 	  //     }
-	
 	  // </style>
 	
 	}; // <template>
-	
 	//     <div class="alert container" :class="[boxStyle]">
-	
 	//         <div class="icon-wrapper" v-if="!isDefault">
-	
 	//             <span>{{{iconType}}}</span>
-	
 	//         </div>
-	
 	//         <div class="contents">
-	
 	//             <slot></slot>
-	
 	//         </div>
-	
 	//     </div>
-	
 	// </template>
-	
 	
 	// <script>
 
@@ -32143,7 +31074,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 336 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div class=\"alert container\" :class=\"[boxStyle]\" _v-54a9a67a=\"\">\n        <div class=\"icon-wrapper\" v-if=\"!isDefault\" _v-54a9a67a=\"\">\n            <span _v-54a9a67a=\"\">{{{iconType}}}</span>\n        </div>\n        <div class=\"contents\" _v-54a9a67a=\"\">\n            <slot _v-54a9a67a=\"\"></slot>\n        </div>\n    </div>";
+	module.exports = "<div class=\"alert container\" :class=\"[boxStyle]\" _v-d9e4410c=\"\">\n        <div class=\"icon-wrapper\" v-if=\"!isDefault\" _v-d9e4410c=\"\">\n            <span _v-d9e4410c=\"\">{{{iconType}}}</span>\n        </div>\n        <div class=\"contents\" _v-d9e4410c=\"\">\n            <slot _v-d9e4410c=\"\"></slot>\n        </div>\n    </div>";
 
 /***/ }),
 /* 337 */
@@ -32186,8 +31117,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-b53aec04&file=trigger.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./trigger.vue", function() {
-				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-b53aec04&file=trigger.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./trigger.vue");
+			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-338570fe&file=trigger.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./trigger.vue", function() {
+				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-338570fe&file=trigger.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./trigger.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -32220,11 +31151,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 	// <template>
-	
 	//     <span v-el:trigger><slot></slot></span>
-	
 	// </template>
-	
 	
 	// <script>
 	exports.default = {
@@ -32238,21 +31166,18 @@ return /******/ (function(modules) { // webpackBootstrap
 	    },
 	    _triggerBy: {
 	      type: Object
-	    },
-	    _isBinded: {
-	      type: Boolean,
-	      default: false
 	    }
 	  },
 	  attached: function attached() {
 	    var _this = this;
 	
 	    var events = { contextmenu: 'contextmenu', hover: 'mouseleave mouseenter', focus: 'blur focus' };
-	    jQuery(this.$el).on(events[this.trigger] || 'click', function () {
+	    jQuery(this.$el).on(events[this.trigger] || 'click', function (e) {
+	      if (e && _this.trigger === 'contextmenu') e.preventDefault();
 	      if (!_this._triggerBy) {
 	        _this.$dispatch('trigger:register', _this, _this.for);
-	        _this._triggerBy && _this._triggerBy.toggle();
 	      }
+	      _this._triggerBy && _this._triggerBy.toggle(e);
 	    });
 	
 	    this.$els.trigger.style['border-bottom'] = this.trigger === 'click' ? '1px dashed #333' : '1px dotted #333';
@@ -32264,19 +31189,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	  methods: {
 	    setTriggerBy: function setTriggerBy(vm) {
-	      if (!this._isBinded) {
-	        var events = { contextmenu: 'contextmenu', hover: 'mouseleave mouseenter', focus: 'blur focus' };
-	        this._isBinded = true;
-	        this._triggerBy = vm;
-	        jQuery(this.$el).on(events[this.trigger] || 'click', this._triggerBy.toggle);
-	      }
+	      this._triggerBy = vm;
 	    }
 	  }
 	  // </script>
 	
-	
 	  // <style>
-	
 	
 	  // </style>
 	
@@ -32330,8 +31248,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-6b5ba826&file=Typeahead.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Typeahead.vue", function() {
-				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-6b5ba826&file=Typeahead.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Typeahead.vue");
+			module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-5b5752ed&file=Typeahead.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Typeahead.vue", function() {
+				var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/vue-loader/lib/style-rewriter.js?id=_v-5b5752ed&file=Typeahead.vue!../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Typeahead.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -32349,7 +31267,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, ".dropdown-menu > li > a {\r\n  cursor: pointer;\r\n}", ""]);
+	exports.push([module.id, ".dropdown-menu > li > a {\n  cursor: pointer;\n}", ""]);
 	
 	// exports
 
@@ -32367,53 +31285,29 @@ return /******/ (function(modules) { // webpackBootstrap
 	var _utils = __webpack_require__(64);
 	
 	var Vue = window.Vue; // <template>
-	
 	//   <div style="position: relative"
-	
 	//        v-bind:class="{'open':showDropdown}"
-	
 	//   >
-	
 	//     <input type="text" class="form-control"
-	
 	//       :placeholder="placeholder"
-	
 	//       autocomplete="off"
-	
 	//       v-model="value"
-	
 	//       @input="update"
-	
 	//       @keydown.up="up"
-	
 	//       @keydown.down="down"
-	
 	//       @keydown.enter= "hit"
-	
 	//       @keydown.esc="reset"
-	
 	//       @blur="showDropdown = false"
-	
 	//     />
-	
 	//     <ul class="dropdown-menu" v-el:dropdown>
-	
 	//       <li v-for="item in items" v-bind:class="{'active': isActive($index)}">
-	
 	//         <a @mousedown.prevent="hit" @mousemove="setActive($index)">
-	
 	//           <partial :name="templateName"></partial>
-	
 	//         </a>
-	
 	//       </li>
-	
 	//     </ul>
-	
 	//   </div>
-	
 	// </template>
-	
 	
 	// <script>
 	
@@ -32560,15 +31454,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 	  // </script>
 	
-	
 	  // <style>
-	
 	  // .dropdown-menu > li > a {
-	
 	  //   cursor: pointer;
-	
 	  // }
-	
 	  // </style>
 	
 	};
@@ -32577,7 +31466,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 346 */
 /***/ (function(module, exports) {
 
-	module.exports = "<div style=\"position: relative\"\r\n       v-bind:class=\"{'open':showDropdown}\"\r\n  >\r\n    <input type=\"text\" class=\"form-control\"\r\n      :placeholder=\"placeholder\"\r\n      autocomplete=\"off\"\r\n      v-model=\"value\"\r\n      @input=\"update\"\r\n      @keydown.up=\"up\"\r\n      @keydown.down=\"down\"\r\n      @keydown.enter= \"hit\"\r\n      @keydown.esc=\"reset\"\r\n      @blur=\"showDropdown = false\"\r\n    />\r\n    <ul class=\"dropdown-menu\" v-el:dropdown>\r\n      <li v-for=\"item in items\" v-bind:class=\"{'active': isActive($index)}\">\r\n        <a @mousedown.prevent=\"hit\" @mousemove=\"setActive($index)\">\r\n          <partial :name=\"templateName\"></partial>\r\n        </a>\r\n      </li>\r\n    </ul>\r\n  </div>";
+	module.exports = "<div style=\"position: relative\"\n       v-bind:class=\"{'open':showDropdown}\"\n  >\n    <input type=\"text\" class=\"form-control\"\n      :placeholder=\"placeholder\"\n      autocomplete=\"off\"\n      v-model=\"value\"\n      @input=\"update\"\n      @keydown.up=\"up\"\n      @keydown.down=\"down\"\n      @keydown.enter= \"hit\"\n      @keydown.esc=\"reset\"\n      @blur=\"showDropdown = false\"\n    />\n    <ul class=\"dropdown-menu\" v-el:dropdown>\n      <li v-for=\"item in items\" v-bind:class=\"{'active': isActive($index)}\">\n        <a @mousedown.prevent=\"hit\" @mousemove=\"setActive($index)\">\n          <partial :name=\"templateName\"></partial>\n        </a>\n      </li>\n    </ul>\n  </div>";
 
 /***/ })
 /******/ ])
