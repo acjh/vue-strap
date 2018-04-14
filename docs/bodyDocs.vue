@@ -30,6 +30,7 @@
         <tooltip-docs></tooltip-docs>
         <popover-docs></popover-docs>
         <trigger-docs></trigger-docs>
+        <typeahead-docs></typeahead-docs>
       </div>
       <div class="col-md-3">
         <affix-sidebar></affix-sidebar>
@@ -73,6 +74,7 @@ import tooltipDocs from './example/tooltipDocs.vue'
 import imageDocs from './example/imageDocs.vue'
 import tipBoxDocs from './example/tipBoxDocs.vue'
 import triggerDocs from './example/triggerDocs.vue'
+import typeaheadDocs from './example/typeaheadDocs.vue'
 
 export default {
   components: {
@@ -95,7 +97,8 @@ export default {
     tooltipDocs,
     imageDocs,
     tipBoxDocs,
-    triggerDocs
+    triggerDocs,
+    typeaheadDocs
   },
   computed: {
     local () { return location.hostname === 'localhost' }
